@@ -17,6 +17,7 @@ development:
   encoding: unicode
   database: pa_dev
   pool: 5
+  host: localhost
   username: pa
   password: padev
 

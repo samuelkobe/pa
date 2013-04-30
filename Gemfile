@@ -23,6 +23,8 @@ gem 'jquery-rails'
 
 gem 'spree', '1.3.2'
 
+gem "therubyracer", :require => 'v8'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
