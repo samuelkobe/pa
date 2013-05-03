@@ -1,12 +1,21 @@
 Pa::Application.routes.draw do
 
+  get "home/index"
+
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
   #
   # We ask that you don't use the :as option here, as Spree relies on it being the default of "spree"
-  mount Spree::Core::Engine, :at => '/'
-          # The priority is based upon order of creation:
+  
+  constraints :subdomain => 'store' do
+      mount Spree::Core::Engine, :at => '/'
+  end
+
+  #scope :subdomain => 'www' do
+  #   root :to=>'home#index'
+  #end
+  # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
@@ -55,7 +64,8 @@ Pa::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  
+  root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 
