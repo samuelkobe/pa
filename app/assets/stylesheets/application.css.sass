@@ -1,0 +1,200 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+@import "bootstrap.scss"
+
+//splash page
+.logo
+	position: relative
+	height: auto
+	display: inline-block
+	float: left
+
+.bump
+	left: 75px !important
+	top: 10px
+
+.potential-logo
+	position: absolute
+
+
+//misc
+.one-third
+	height: 30%
+	//background: pink
+
+.tall
+	position: relative
+	height: 100%
+
+.two-thirds
+	height: 69%
+	//background: orange
+
+.two-fifths
+	height: 50%
+
+.three-fifths
+	height: 50%
+	//background: orange
+
+.frame
+	min-height: 100%
+	height: 100%
+	position: relative
+	overflow: hidden
+
+//hero
+.hero-img
+	position: absolute
+	bottom: 0
+	right: 2.5em 
+
+.call-to-action
+	padding-bottom: 2.5em
+	p
+		margin-top: 16px
+
+.move-down
+	padding-top: 72px
+
+//concept
+.steps
+	height: 100%
+	
+
+.step-well
+	position: relative
+	display: inline-block
+	margin-top: 36px
+	left: 50%
+	margin-left: -2.5em
+	height: 80px
+	width: 80px
+	background: url("/assets/glyphicons-halflings.png") rgba(0, 0, 0, 0.075)
+	@include border-radius (2.5em)
+
+.message
+	padding: .75em
+	text-align: center
+
+#roster
+	background: url(stadium-lores.jpg) no-repeat center center fixed
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+//roster well
+
+#this-carousel-id-2
+	height: 100%
+
+.carousel-inner
+	height: 100%
+.item
+	height: 100%
+
+.roster-well
+	height: 20%
+	margin-top: 2.5%
+
+.player
+	background: $white
+	height: 100%
+
+.partners-info
+	background: rgba(0, 0, 0, 0.5)
+	color: #fff
+
+
+.padding
+	padding: 28px	
+
+.pad-top
+	margin-top: 10%
+
+
+
+//partners
+#partners
+	background: url(rtpimg.jpg) no-repeat center center fixed
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+#partners-2
+	background: url(hhimg.jpg) no-repeat center center fixed
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover	
+
+.partner-subheader
+	font-size: 22px
+	font-weight: normal
+	line-height: 19px
+	color: #00A7FF
+	margin-top: -12px
+
+.partner-flavor
+	font-size: 18px
+	font-style: italic
+	padding-top: 3.25em
+	padding-bottom: .75em
+
+.button-wrapper
+	width: 100%
+
+
+
+.btn
+	-webkit-border-radius: 0
+	-moz-border-radius: 0
+	border-radius: 0
+	background: $black
+	padding: 15px 50px
+
+.btn-large
+	-webkit-border-radius: 0
+	-moz-border-radius: 0
+	border-radius: 0
+
+.alpha
+	margin-left: 0 !important
+
+.omega
+	margin-right: 0 !important
+
+.block
+	text-align: center
+ 
+.block:before
+	content: ''
+	display: inline-block
+	height: 100%
+	vertical-align: middle
+	margin-right: -0.25em
+
+.centered
+	display: inline-block
+	vertical-align: middle
+
+.nav a.active
+	color: red
+
+
+.gear-up
+	background: #fff
+	width: 100%
+	margin-top: 50px
