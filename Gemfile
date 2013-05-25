@@ -20,8 +20,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem "lazyload-rails"
 gem 'spree', '1.3.2'
+gem "typhoeus"
 
 gem "therubyracer", :require => 'v8'
 

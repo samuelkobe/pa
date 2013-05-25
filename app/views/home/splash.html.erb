@@ -1,11 +1,11 @@
 
 <!-- start of hero-->
-<section id ="hero" class="frame">
+<section id ="hero" class="tall">
     <div class="one-third hidden-tablet hidden-phone"></div>
     <div class="two-thirds">
 		<div class="container-fluid tall">
 			<div class="row-fluid tall">
-				<div class="span8 tall pull-right">
+				<div class="span8 tall pull-right mobile-height">
 			      <%= image_tag("big-billboard.png", :alt => "Potential Apparel billboard", :class => "hero-img") %>
 			    </div>
 			    <div class="span4 height-100">
@@ -32,63 +32,44 @@
 </section>
 <!-- end of of hero -->
 <!-- start of concept -->
-<section id ="concept" class="frame">
-    <div class="three-fifths">
-    	<div class="container-fluid tall">
-			<div class="row-fluid tall">
-				<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
-				  <div class="carousel-inner">
-				    <div class="item active"><!-- class of active since it's the first item -->
-				     <%= image_tag("you-wear-a-shirt-everyday.png") %>
-				    </div>
-				    <div class="item">
-				     <%= image_tag("you-wear-a-shirt-everyday.png") %>
-				    </div>
-				    <div class="item">
-				      <%= image_tag("you-wear-a-shirt-everyday.png") %>
-				    </div>
-				    <div class="item">
-				      <%= image_tag("you-wear-a-shirt-everyday.png") %>
-				    </div>
-				  </div><!-- /.carousel-inner -->
-				  <!--  Next and Previous controls below
-				        href values must reference the id for this carousel -->
-				    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-				    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
-				</div><!-- /.carousel -->
+<section id ="concept" class="frame no-padding">
+    <div class="two-fifths grid-pattern">
+    	<div class="container">
+			<div class="row">
+			    <div class="span12 video-block">
+				     <iframe id="concept-video" width="100%" height="100%" src="http://www.youtube.com/embed/2XB4dtq1guE" frameborder="0" allowfullscreen></iframe>
+			    </div>
 		    </div>
 		</div>
     </div>
     <div class="two-fifths">
-    	<div class="container tall">
-			<div class="row tall">
-				<div class="span4 steps">
-					<div class="step-well hidden-tablet"></div>
-					<div class="message">
-						<h5>You wear a shirt every day. Some people end up paying just to advertise for big companies.</h5>
-						<p>
-							What you wear says a lot about who you are and what you value. Your shirt is seen by tons of people whenever you’re out in public. Some people pay big companies lots of money to wear their brand, effectively advertising for them for free.
-						</p>
+    	<div class="container">
+			<div class="row">
+				<div id="this-carousel-id" class="carousel slide span12">
+				  <div class="carousel-inner">
+				    <div class="item active">
+					 <%= image_tag("models-placeholder.jpg") %>
 					</div>
+				    <div class="item">
+				     <%= image_tag("models-placeholder.jpg") %>
+				    </div>
+				    <div class="item">
+				      <%= image_tag("models-placeholder.jpg") %>
+				    </div>
+				    <div class="item">
+				      <%= image_tag("models-placeholder.jpg") %>
+				    </div>
+				  </div>
+
+				    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+				    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
 				</div>
-				<div class="span4 steps">
-					<div class="step-well hidden-tablet"></div>
-					<div class="message">
-						<h5>What if you could donate the space on your shirt to benefit real people?</h5>
-						<p>
-							Wearing potential apparel means you’re supporting the next generation of all star athletes and headlining artists in multiple ways. Proceeds from every sale go directly to our partnered charities and organizations.
-						</p>
-					</div>
-				</div>
-				<div class="span4 steps ">
-					<div class="step-well hidden-tablet "></div>
-					<div class="message">
-						<h5>You wear a shirt every day. Some people end up paying just to advertise for big companies.</h5>
-						<p>
-							What you wear says a lot about who you are and what you support. Your shirt is seen by tons of people whenever you’re out in public. Some people pay big companies lots of money to wear their logo, effectively advertising for them for free.
-						</p>
-					</div>
-				</div>
+		    </div>
+		</div>
+		<div class="container">
+			<div class="span3 offset9 concept-button">
+				<h5>If you like what you see<h5>
+				<button class="btn btn-inverse btn-large">Go to Store</button>
 			</div>
 		</div>
 	</div>
@@ -97,24 +78,95 @@
 <!-- roster start-->
 <section id ="roster" class="frame">
 	<div class="container tall">
-		<div class="pad-top"></div>
+		<h1 class="title-roster">ROSTER</h1>
 		<div class="row roster-well">
-			<div class="span6 player">
-				<div class="row roster-well">
-      				<div class="span2"><%= image_tag("brendan-gallagher.png") %></div>
-     				<div class="span4">Level 2</div>
-    			</div>
-    		</div>
-			<div class="span6 player"></div>
-		</div>
+			<div class="span6">
+				<div class="player-image tall pixel-push">
+					<%= image_tag("1-gallagher.jpg") %>
+				<div class="player-info-right no-left tall span2">
+					<div class="player-padding">
+						<h3 class="player-name"><span class="first-name">Brendan</span> <span class="last-name">Gallagher</span></h3>
+						<p class="twitter-handle"><a href="#">@bgally17</a></p>
+
+						<h5 class="team-name"><span class="city">Montreal</span> <span class="team-name">Canadiens</span></h5>
+						<div class="team-logo montreal"></div>
+					</div>
+				</div>
+				</div>
+			</div><!--end of player-1-->
+			<div class="span6">
+				<div class="player-image tall pixel-push">
+					<%= image_tag("4-ferraro.jpg") %>
+				<div class="player-info-right tall span2">
+					<div class="player-padding">
+						<h3 class="player-name"><span class="first-name">Landon</span> <span class="last-name">Ferraro</span></h3>
+						<p class="twitter-handle"><a href="#">@LandonFerraro</a></p>
+						<h5 class="team-name"><span class="city">Detroit</span> <span class="team-name">Red Wings</span></h5>
+						<div class="team-logo detroit"></div>
+					</div>
+				</div>
+				</div>
+			</div><!--end of player-2-->
+		</div><!--end of row-->
 		<div class="row roster-well">
-			<div class="span6 player"></div>
-			<div class="span6 player"></div>
-		</div>
+			<div class="span6">
+				<div class="player-image tall no-left">
+					<%= image_tag("2-johansen.jpg") %>
+				<div class="player-info-left tall span2">
+					<div class="player-padding">
+						<h3 class="player-name"><span class="first-name">Ryan</span> <span class="last-name">Johansen</span></h3>
+						<p class="twitter-handle"><a href="#">@RyanJohansen19</a></p>
+						<h5 class="team-name"><span class="city">Columbus</span> <span class="team-name">Blue Jackets</span></h5>
+						<div class="team-logo columbus"></div>
+					</div>
+				</div>
+				</div>
+			</div><!--end of player-2-->
+			<div class="span6">
+				<div class="player-image tall no-left">
+					<%= image_tag("5-pysyk.jpg") %>
+				<div class="player-info-left no-left tall span2">
+					<div class="player-padding">
+						<h3 class="player-name"><span class="first-name">Mark</span> <span class="last-name">Pysyk</span></h3>
+						<p class="twitter-handle"><a href="#">@Mpysyk03</a></p>
+						<h5 class="team-name"><span class="city">Buffalo</span> <span class="team-name">Sabres</span></h5>
+						<div class="team-logo buffalo"></div>
+					</div>
+				</div>
+				</div>
+			</div><!--end of player-1-->
+
+			
+		</div><!--end of row-->
 		<div class="row roster-well">
-			<div class="span6 player"></div>
-			<div class="span6 player"></div>
-		</div>
+			<div class="span6">
+				<div class="player-image tall pixel-push">
+					<%= image_tag("3-calvert.jpg") %>
+				<div class="player-info-right no-left tall span2">
+					<div class="player-padding">
+						<h3 class="player-name"><span class="first-name">Matt</span> <span class="last-name">Calvert</span></h3>
+						<p class="twitter-handle"><a href="#">@mattcalver11</a></p>
+						<h5 class="team-name"><span class="city">Columbus</span> <span class="team-name">Blue Jackets</span></h5>
+						<div class="team-logo columbus"></div>
+					</div>
+				</div>
+				</div>
+			</div><!--end of player-1-->
+			
+			<div class="span6">
+				<div class="player-image tall  pixel-push">
+					<%= image_tag("6-gillies.jpg") %>
+				<div class="player-info-right tall span2">
+					<div class="player-padding">
+						<h3 class="player-name"><span class="first-name">Colton</span> <span class="last-name">Gillies</span></h3>
+						<p class="twitter-handle"><a href="#">@ColtonGillies</a></p>
+						<h5><span class="city">Columbus</span> <span class="team-name">Blue Jackets</span></h5>
+						<div class="team-logo columbus"></div>
+					</div>
+				</div>
+				</div>
+			</div><!--end of player-2-->
+		</div><!--end of row-->
 	</div>
 </section><!--end of roster-->
 
@@ -122,41 +174,46 @@
 	<div class="container tall">
 		<div class="pad-top"></div>
 		<div class="row">
-			<div class="span4 partners-info">
+			<div class="span3 partners-info">
 				<div class="padding">
 					<h2 class="partner-header">OUR PARTNERS</h2>
 					<h3 class="partner-subheader">Right To Play</h3>
 					<h4 class="partner-flavor">Look after yourself, look after one another.</h4>
-					<p class="partner-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p class="partner-para">Right To Play is an international humanitarian organization that uses sport and play programs to improve health, develop life skills, and foster peace for children and communities in some of the most disadvantaged areas of the world. Working in both the humanitarian and development context, Right To Play builds local capacity by training community leaders as Coaches to deliver its programs in 20 countries affected by war, poverty, and disease in Africa, Asia, the Middle East and South America. The national offices raise funds, build awareness for Right To Play programs and advocate for Sport for Development.</p>
 					<button class="btn btn-large gear-up">Gear Up</button>
 				</div>
 			</div>
-			<div class="span8 tall"><iframe width="100%" height="55%" src="http://www.youtube.com/embed/uMSX4ZIFOkQ" frameborder="0" allowfullscreen></iframe></div>
+			<div class="span8 tall"><iframe width="100%" height="40%" src="http://www.youtube.com/embed/uMSX4ZIFOkQ" frameborder="0" allowfullscreen></iframe></div>
 		</div>
 </section><!--end of roster-->
 <section id ="partners-2" class="frame">
 	<div class="container tall">
 	<div class="pad-top"></div>
 	<div class="row">
-		<div class="span8 tall"><iframe width="100%" height="55%" src="http://www.youtube.com/embed/uMSX4ZIFOkQ" frameborder="0" allowfullscreen></iframe></div>
-		<div class="span4 partners-info">
+		<div class="span8 tall"><iframe width="100%" height="40%" src="http://www.youtube.com/embed/uMSX4ZIFOkQ" frameborder="0" allowfullscreen></iframe></div>
+		<div class="span3 partners-info">
 			<div class="padding">
 				<h2 class="partner-header">OUR PARTNERS</h2>
 				<h3 class="partner-subheader">HEROES Hockey</h3>
 				<h4 class="partner-flavor">Empowering children on ice</h4>
-				<p class="partner-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p class="partner-para">The Hockey Education Reaching Out Society is a registered Canadian charitable organization committed to empowering children through ice hockey. The premise of HEROS is to use the game of hockey as a catalyst to attract youth to a program offering support for education self-esteem building and life skills training. The program focuses on boys and girls of diverse ethnicity from economically challenged neighborhoods. The program will be conducted in an environment of fun and safety where each child is considered to be a HERO.</p>
 				<button class="btn btn-large gear-up">Gear Up</button>
 			</div>
 		</div>
 	</div>
 </section><!--end of roster-->
+<section id ="apparel" class="frame">
+	<div class="container">
+		<div class="row">
+			<div class="span3"><%= image_tag("has-no-shelf.jpg") %></div>
+			<div class="span3"><%= image_tag("has-no-shelf.jpg") %></div>
+			<div class="span3"><%= image_tag("has-no-shelf.jpg") %></div>
+			<div class="span3"><%= image_tag("has-no-shelf.jpg") %></div>
+		</div>
+
+	</div>
+</section>
+<footer class="footer-splash">
+
+
+</footer>
