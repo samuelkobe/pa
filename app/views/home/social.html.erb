@@ -1,0 +1,52 @@
+<section id ="social" class="frame">
+	<div class="container">
+		<div class="row">
+			<div class="span12"><h3>SPREAD THE WORD</h3></div>
+		</div>
+		<div class="row social-call-to-action">
+			<div class="span4 social-steps">
+				<div class="social-steps-info-wrapper">
+					<div class="social-icon">a</div>
+					<h5>Post a photo wearing Potential Apparel</h5>
+					<p>
+						When you post a photo wearing your Potential Apparel on your facebook timeline or on your instagram account, we’ll donate an extra dollar to our partnered charities and organizations. Just tag <a href="#" >@Potential Apparel</a> when you post to your wall, or use hashtag <a href="#" >#PotentialApparel</a> on instagram.
+					</p>
+				</div>
+			</div>
+			<div class="span4 social-steps">
+				<div class="social-steps-info-wrapper">
+					<div class="social-icon">a</div>
+					<h5>Share our goal with the world</h5>
+					<p>
+						Et ut de eat. Fugita cusdae cust volum et omnimag nimoluptatas adiaect ionectem rent ea dolor caborerrum quia quia pres es dunt fugitat quate volumet quunduciis auteste destectat.
+					</p>
+				</div>
+			</div>
+			<div class="span4 social-steps">
+				<div class="social-steps-info-wrapper">
+					<div class="social-icon">a</div>
+					<h5>Join the conversation on Twitter</h5>
+					<p>
+						Et ut de eat. Fugita cusdae cust volum et omnimag nimoluptatas adiaect ionectem rent ea dolor caborerrum quia quia pres es dunt fugitat quate volumet quunduciis auteste destectat.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="this-carousel-id" class="carousel slide span12">
+				<div class="carousel-inner">
+					<% @tweets.first( 5 ).each do |tweet| %>
+						<% if @tweets.index(tweet) == 0 %>
+								<div class="item active social-min block"><h1 class="tweet-feed centered"><%= tweet['text'] %></h1></div>
+							<% else %>
+								<div class="item social-min block"><h1 class="tweet-feed centered"><%= tweet['text'] %></h1></div>
+						<% end %>
+				   <% end %>
+				   <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+				   <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</section>

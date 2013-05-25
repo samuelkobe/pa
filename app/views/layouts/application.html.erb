@@ -2,13 +2,48 @@
 <html>
 <head>
   <title>Pa</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body  data-spy="scroll" data-target="#navbar">
+	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=560685193964818";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
 
-<%= yield %>
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <div class="logo">
+        <%= image_tag("potential_logo.png", :alt => "Potential Apparel billboard", :class => "potential-logo") %>
+      </div>
+       <ul class="nav bump">
+        <li> <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.1368146021.html#_=1369096112583&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fwww.potentialapparel.com%2F&amp;size=m&amp;text=Potential%20Apparel%20is%20building%20the%20World's%20Largest%20Billboard.%20I%20joined%20the%20team%20today%2C%20you%20can%20too!&amp;url=http%3A%2F%2Fpotentialapparel.com&amp;via=PotentialSays" class="twitter-share-button twitter-count-horizontal" style="width: 107px; height: 20px;" title="Twitter Tweet Button" data-twttr-rendered="true"></iframe></li>
+       <li>        <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://wwww.facebook.com/potentialapparel" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="segoe ui" data-colorscheme="dark" fb-xfbml-state="rendered"><span style="height: 20px; width: 82px;"><iframe id="f197b34a9" name="f115a41054" scrolling="no" style="border: none; overflow: hidden; height: 20px; width: 82px;" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=560685193964818&amp;locale=en_US&amp;sdk=joey&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D24%23cb%3Df88330ad4%26origin%3Dhttp%253A%252F%252Fwww.potentialapparel.com%252Ff5e2c88ec%26domain%3Dwww.potentialapparel.com%26relation%3Dparent.parent&amp;href=http%3A%2F%2Fwwww.facebook.com%2Fpotentialapparel&amp;node_type=link&amp;width=450&amp;font=segoe%20ui&amp;layout=button_count&amp;colorscheme=dark&amp;show_faces=false&amp;send=false&amp;extended_social_context=false"></iframe></span></div>
+</li>
+      </ul>
+
+
+    </div>
+  </div>
+</div>
+  <%= yield %>
 
 </body>
+<script>
+  
+</script>
 </html>

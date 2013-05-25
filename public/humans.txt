@@ -1,0 +1,33 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Name: Matthew Harwood.
+	Alias: Watashi.
+	Role: Umbrella-less Front End Engineer.
+	Twitter: @matty0187
+	From: Detroit, Michigan.
+
+	Name: Samuel Kobe.
+	Alias: Hammer.
+	Role: Four Fingered Web Developer.
+	Twitter: @samuelkobe
+	From: Vancouver, Canada.
+
+# THANKS
+
+    Family
+
+# TECHNOLOGY COLOPHON
+
+	Ruby, Rails,
+	Refinery CMS,
+    HTML5, SASS,
+	jQuery, Modernizr
+	
+# SITE
+	Last update: 2013/02/08
+	Language: English
+	Doctype: HTML5 BoilerPlate
+	IDE: TextMate, iTerm2, Photoshop, Illustrator, InDesign
