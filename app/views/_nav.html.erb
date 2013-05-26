@@ -2,17 +2,22 @@
   <div class="navbar-inner">
     <div class="container-fluid">
 
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+      <a class="btn btn-navbar no-margin" data-toggle="collapse" data-target=".nav-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="#hero">Potential Apparel</a>
+
       <div class="nav-collapse">
         <ul class="nav">
+
+          <li>
+
+            <%= link_to "Potential Apparel", root_url(:anchor => "hero"), 'data-target' => '#hero', :class => 'normal brand' %>
+          </li>
           <li><%= link_to "Concept", root_url(:anchor => "concept"), 'data-target' => '#concept', :class => 'normal' %></li>
           <li><%= link_to "Roster", root_url(:anchor => "roster"), 'data-target' => '#roster', :class => 'normal' %></li>
-          <li><%#= link_to "Link",  { controller: 'home', action: 'social' }, anchor: 'foo', :class => 'normal' %></li>
+          <li><%= link_to "Apparel", root_url(:anchor => "apparel"), 'data-target' => '#apparel', :class => 'normal' %></li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Partners<b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -20,7 +25,7 @@
               <li><%= link_to "Heroes Hockey", root_url(:anchor => "partners-2"), 'data-target' => '#partners-2', :class => 'normal' %></li>
             </ul>
           </li>
-          <li><%= link_to "Apparel", root_url(:anchor => "apparel"), 'data-target' => '#apparel', :class => 'normal' %></li>
+          
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact<b class="caret"></b></a>
             <ul class="dropdown-menu">

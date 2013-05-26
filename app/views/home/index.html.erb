@@ -23,7 +23,7 @@
 				</div>
 					<div class="move-down hidden-tablet hidden-phone">
 						<h5>A whole new way to help.</h5>
-						<button class="btn btn-inverse btn-large">Coming Soon</button>
+						<button class="btn btn-inverse btn-large no-margin">Coming Soon</button>
 					</div>
 			    </div>
 		    </div>
@@ -39,7 +39,7 @@
     	<div class="container">
 			<div class="row">
 			    <div class="span12 video-block">
-				     <iframe id="concept-video" width="100%" height="100%" src="http://www.youtube.com/embed/2XB4dtq1guE" frameborder="0" allowfullscreen></iframe>
+				     <iframe src="http://player.vimeo.com/video/66986983?title=0&amp;byline=0&amp;portrait=0" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 			    </div>
 		    </div>
 		</div>
@@ -47,10 +47,10 @@
     <div class="two-fifths">
     	<div class="container">
 			<div class="row">
-				<div id="this-carousel-id" class="carousel slide span12">
+				<div id="this-carousel-id" class="carousel slide span12 no-margin-b">
 				  <div class="carousel-inner">
 				    <div class="item active">
-					 <%= image_tag("models-placeholder.jpg") %>
+					 <%= image_tag("models-slider1.png") %>
 					</div>
 				    <div class="item">
 				     <%= image_tag("models-placeholder.jpg") %>
@@ -70,8 +70,7 @@
 		</div>
 		<div class="container">
 			<div class="span3 offset9 concept-button">
-				<h5>If you like what you see<h5>
-				<button class="btn btn-inverse btn-large">Go to Store</button>
+				<button class="btn btn-inverse btn-large">See all apparel</button>
 			</div>
 		</div>
 	</div>
@@ -80,7 +79,14 @@
 <!-- roster start-->
 <section id ="roster" class="frame">
 	<div class="container tall">
-		<h1 class="title-roster">ROSTER</h1>
+		<div class="row relative">
+			<div class="span1">
+				<h2 class="bottom-line">Roster</h2>
+			</div>
+			<div class="span11 margin-36">
+				<div class="light-line visible-desktop"></div>
+			</div>
+		</div>
 		<div class="row roster-well">
 			<div class="span6">
 				<div class="player-image tall pixel-push">
@@ -169,9 +175,100 @@
 				</div>
 			</div><!--end of player-2-->
 		</div><!--end of row-->
+		<div class="container">
+			<div class="row">
+				<div class="span3 offset9 concept-button">
+					<button class="btn gear-up btn-large">Go to Store</button>
+				</div>
+			</div>
+		</div>
 	</div>
 </section><!--end of roster-->
+<section id ="apparel" class="frame">
+	<div class="container">
+		<div class="row relative">
+			<div class="span3 ">
+				<h2 class="bottom-line">Potential Apparel</h2>
+			</div>
+			<div class="span9 margin-36">
+				<div class="darker-line visible-desktop"></div>
+			</div>
+		</div>
+		<div class="row bump-20">
 
+			<div class="span3">
+				<div class="app-wrap">
+					<%= link_to image_tag("sand-phnsl-black-a.jpg", :mouseover => "sand-phnsl-black-b.jpg", :class => "app-anchor"), :action => "social" %>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="app-wrap">
+					<%= link_to image_tag("w-orange-phnsl-black-a.jpg", :mouseover => "w-orange-phnsl-black-b.jpg", :class => "app-anchor"), :action => "social" %>
+				</div>
+			</div>
+			
+			<div class="span3">
+				<div class="app-wrap">
+					<%= link_to image_tag("crew-red-circle-white-a.jpg", :mouseover => "crew-red-circle-white-b.jpg", :class => "app-anchor"), :action => "social" %>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="app-wrap">
+					<%= link_to image_tag("red-circlelogo-white-a.jpg", :mouseover => "red-circlelogo-white-b.jpg", :class => "app-anchor"), :action => "social" %>
+				</div>
+			</div>
+		</div>
+		<div class="row bump-20">
+			<div class="span3">
+				<div class="app-wrap">
+					<%= link_to image_tag("black-potentialred-a.jpg", :mouseover => "black-potentialred-b.jpg", :class => "app-anchor"), :action => "social" %>
+				</div>
+			</div>
+
+			<div class="span3">
+				<div class="app-wrap">
+					<%= link_to image_tag("sport-grey-plines-red-a.jpg", :mouseover => "sport-grey-plines-red-b.jpg", :class => "app-anchor"), :action => "social" %>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="app-wrap">
+					<%= link_to image_tag("tank-navy-sie-white-a.jpg", :mouseover => "tank-navy-sie-white-b.jpg", :class => "app-anchor"), :action => "social" %>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="app-wrap">
+					<%= link_to image_tag("w-black-circlelogo-white-a.jpg", :mouseover => "w-black-circlelogo-white-b.jpg", :class => "app-anchor"), :action => "social" %>
+				</div>
+			</div>
+		</div>
+		<div class="row bump-20">
+			<div class="span3">
+				<div class="app-wrap">
+					<%= link_to image_tag("w-hoodie-sport-grey-circlelogo-black-a.jpg", :mouseover => "w-hoodie-sport-grey-circlelogo-black-b.jpg", :class => "app-anchor"), :action => "social" %>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="app-wrap">
+					<%= link_to image_tag("charcoal-phnsl-white-a.jpg", :mouseover => "charcoal-phnsl-white-b.jpg", :class => "app-anchor"), :action => "social" %>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="app-wrap">
+					<%= link_to image_tag("w-sport-grey-phnsl-white-a.jpg", :mouseover => "w-sport-grey-phnsl-white-b.jpg", :class => "app-anchor"), :action => "social" %>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="app-wrap">
+					<%= link_to image_tag("w-sport-grey-wyp-blue-a.jpg", :mouseover => "w-sport-grey-wyp-blue-b.jpg", :class => "app-anchor"), :action => "social" %>
+				</div>
+			</div>
+		</div>
+		<div class="block">
+			<button class="btn btn-inverse btn-large bump-40">Load More</button>
+		</div>
+	</div>
+
+</section>
 <section id ="partners" class="frame">
 	<div class="container tall">
 		<div class="pad-top"></div>
@@ -180,46 +277,37 @@
 				<div class="padding">
 					<h2 class="partner-header">OUR PARTNERS</h2>
 					<h3 class="partner-subheader">Right To Play</h3>
-					<h4 class="partner-flavor">Look after yourself, look after one another.</h4>
+					<h4 class="partner-flavor">When chlidren play, the world wins.</h4>
 					<p class="partner-para">Right To Play is an international humanitarian organization that uses sport and play programs to improve health, develop life skills, and foster peace for children and communities in some of the most disadvantaged areas of the world. Working in both the humanitarian and development context, Right To Play builds local capacity by training community leaders as Coaches to deliver its programs in 20 countries affected by war, poverty, and disease in Africa, Asia, the Middle East and South America. The national offices raise funds, build awareness for Right To Play programs and advocate for Sport for Development.</p>
-					<button class="btn btn-large gear-up">Gear Up</button>
+					<button class="btn btn-large gear-up no-margin-b">Gear Up</button>
 				</div>
 			</div>
-			<div class="span8 tall"><iframe width="100%" height="40%" src="http://www.youtube.com/embed/uMSX4ZIFOkQ" frameborder="0" allowfullscreen></iframe></div>
+			<div class="span8 tall hidden-phone">
+				<iframe width="100%" height="500px" src="http://www.youtube.com/embed/m_RfeSl3dUc" frameborder="0" allowfullscreen></iframe>
+				
+			</div>
 		</div>
 </section><!--end of roster-->
 <section id ="partners-2" class="frame">
 	<div class="container tall">
 	<div class="pad-top"></div>
 	<div class="row">
-		<div class="span8 tall"><iframe width="100%" height="40%" src="http://www.youtube.com/embed/uMSX4ZIFOkQ" frameborder="0" allowfullscreen></iframe></div>
+
+		<div class="span8 tall hidden-phone">
+			<iframe width="100%" height="500px" src="http://www.youtube.com/embed/jIi7jCx5wJg" frameborder="0" allowfullscreen></iframe>
+		</div>
 		<div class="span3 partners-info">
 			<div class="padding">
 				<h2 class="partner-header">OUR PARTNERS</h2>
 				<h3 class="partner-subheader">HEROES Hockey</h3>
 				<h4 class="partner-flavor">Empowering children on ice</h4>
 				<p class="partner-para">The Hockey Education Reaching Out Society is a registered Canadian charitable organization committed to empowering children through ice hockey. The premise of HEROS is to use the game of hockey as a catalyst to attract youth to a program offering support for education self-esteem building and life skills training. The program focuses on boys and girls of diverse ethnicity from economically challenged neighborhoods. The program will be conducted in an environment of fun and safety where each child is considered to be a HERO.</p>
-				<button class="btn btn-large gear-up">Gear Up</button>
+				<button class="btn btn-large gear-up no-margin-b">Gear Up</button>
 			</div>
 		</div>
 	</div>
 </section><!--end of roster-->
-<section id ="apparel" class="frame">
-	<div class="container">
-		<div class="row">
-			<div class="span3"><%= image_tag("has-no-shelf.jpg") %></div>
-			<div class="span3"><%= image_tag("has-no-shelf.jpg") %></div>
-			<div class="span3"><%= image_tag("has-no-shelf.jpg") %></div>
-			<div class="span3"><%= image_tag("has-no-shelf.jpg") %></div>
-		</div>
-
-	</div>
-</section>
-
-  <script>
-		$("img").lazyload();
-  </script>
-  <script>
+<script>
   	 $('.nav li a.normal').on('click', function(e) {
 		 e.preventDefault();
 		 $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 300);
@@ -238,6 +326,5 @@
 		 e.preventDefault();
 		 $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 300);
  	 });
-	
-	
-  </script>
+
+</script>

@@ -361,7 +361,7 @@ $sansFontFamily: 'Open Sans', sans-serif !default;
 	min-height: 100%;
 	position: relative;
 	overflow: hidden;
-	padding: 100px 0 50px;
+	padding: 75px 0 0;
 }
 
 //hero
@@ -369,6 +369,16 @@ $sansFontFamily: 'Open Sans', sans-serif !default;
 	position: absolute;
 	bottom: 0;
 	right: 2.5em;
+}
+.w-potential-logo{
+	position:relative;
+	width: 60px;
+}
+.potential-logo{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: #000;
 }
 
 .call-to-action{
@@ -398,7 +408,7 @@ background: url("/assets/subtle-grid.gif");
 	z-index:0 !important; 
 	margin-top: 72px; 
 	width: 100%;
-	height: 500px;
+	height: 653px;
 	//48.9285714286em
 }
 
@@ -425,7 +435,19 @@ background: url("/assets/subtle-grid.gif");
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	.bottom-line{
+		position: relative;
+		color: #fff;
+		text-align:left;
+	}
+	.light-line{
+		color: #fff;
+		background: #fff;
+		height: 1px;
+		margin-left: 52px;
+	}
 }
+
 .title-roster{
 	position: absolute;
 	top:-54px;
@@ -443,7 +465,7 @@ background: url("/assets/subtle-grid.gif");
 
 .item{
 	height: 100%;
-	padding-top: 4%;
+	padding-top: 28px;
 }
 
 .roster-well{
@@ -587,6 +609,47 @@ background: url("/assets/subtle-grid.gif");
 }
 
 
+//apparel
+.relative{
+	position: relative;
+	height: 72px;
+}
+.absolute-20{
+	position: absolute;
+	top:72px;
+	color: #000;
+	text-shadow: 1px 1px 0 #f5f5f5;
+}
+.bottom-line{
+	position: absolute;
+}
+.darker-line{
+	color: #000;
+	background: #000;
+	height: 1px;
+}
+.bump-20{
+	margin-top: 32px;
+}
+.bump-40{
+	margin-top: 64px;
+}
+.app-wrap{
+	position: relative;
+	&:active{
+		position: absolute;
+		margin-top: 1px;
+	}
+}
+.app-anchor{
+	position: relative;
+	border: 1px #fff solid;
+	&:hover{
+		border-bottom: 1px #000 solid;
+	}
+}
+
+//navigation
 
 
 //import
@@ -599,6 +662,7 @@ background: url("/assets/subtle-grid.gif");
 	border-radius: 0;
 	background: $black;
 	padding: 15px 50px;
+	margin: 72px 0;
 }
 
 .btn-large{
@@ -615,22 +679,6 @@ background: url("/assets/subtle-grid.gif");
 	margin-right: 0 !important;
 }
 
-.block{
-	text-align: center;
- }
-
-.block:before{
-	content: '';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-	margin-right: -0.25em;
-}
-
-.centered {
-	display: inline-block;
-	vertical-align: middle;
-}
 
 .nav a.active {
 	color: red;
@@ -645,9 +693,17 @@ background: url("/assets/subtle-grid.gif");
 //footer
 
 .footer-splash{
-	background: #000;
+	position: relative;
+	background:#333;
 	height:500px;
 	width:100%;
+}
+.terms-wrap{
+	position: absolute;
+	bottom: 0;
+	background: #000;
+	height: 75px;
+	width: 100%;
 }
 
 
@@ -675,9 +731,67 @@ background: url("/assets/subtle-grid.gif");
 
 }
 
+//controls
+.carousel-control.left{
+	left: -72px;
+	top: 50%;
+}
+.carousel-control.right{
+	right: -72px;
+	top: 50%;
+}
+
+//potential team
+.w-team-info{
+	position:relative;
+	height: 262px;
+
+	.team-info{
+		position: absolute;
+		top:-257px;
+		left:-157px;
+		width: 314px;
+		height: 314px;
+		padding: 55px;
+		background: black;
+		@include border-radius (280px);
+		text-align: center;
+		color: #fff;
+		p{
+			padding-top: 37px;
+			font-size: 13px;
+		}
+	}
+}
+
+//contact 
+#contact{
+	position: relative;
+	background: url("/assets/contact.jpg");
+	@include background-size(cover);
+
+	h3, p{
+		color: #fff;
+	}
+	
+}
+.contact{
+
+	position:fixed;
+	background-color: rgba(0,0,0,.3);
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.w-contact{
+	position:relative;
+}
 
 
 @media (min-width: 980px) and (max-width: 1400px){
+	.frame{ height: auto; min-height: auto;}
+  
 .pad-top{
 	display:none;
 	visibility:hidden;
@@ -696,10 +810,26 @@ background: url("/assets/subtle-grid.gif");
 	position: relative;
 	margin-top: -24px;
 }
+	.carousel-control.left{
+		left: -22px;
+		top: 50%;
+		z-index: 100;
+	}
+	.carousel-control.right{
+		right: -22px;
+		top: 50%;
+		z-index: 100;
+	}
+	.w-team-info{
+		.team-info{
+			left: 0;
+		}
+	}
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .height-66{ height:100% }
-  .frame{ height: auto; min-height: auto; padding-bottom: 3em;}
+  .frame{ height: auto; min-height: auto;}
+  .tall{height:auto;}
   .hero-img {position: relative;} 
   .message {padding: 0}
   .roster-well{
@@ -709,16 +839,29 @@ background: url("/assets/subtle-grid.gif");
 	display:none;
 	visibility:hidden;
 	}
+	.carousel-control.left{
+		left: 0px;
+		top: 50%;
+	}
+	.carousel-control.right{
+		right: 0px;
+		top: 50%;
+	}
+	.w-team-info{
+		.team-info{
+			left: 0;
+		}
+	}
 }
 
 // Phones only
 @media (max-width: 767px) {
    .height-66 { height:100% }
    .tall{height:auto} 
-   .frame{ height: auto; min-height: auto; padding-bottom: 3em;}
+   .frame{ height: auto; min-height: auto; padding:0; margin:0;}
    .hero-img {position: relative;}
    .message {padding: 0}
-   #roster {background: none;}
+   #roster {background: #000;}
    .player-info-left{
    	width: 33%;
    }
@@ -732,6 +875,22 @@ background: url("/assets/subtle-grid.gif");
 	.video-block{
 		width: 100%;
 	}
+	.carousel-control.left{
+		left: 0px;
+		top: 50%;
+	}
+	.carousel-control.right{
+		right: 0px;
+		top: 50%;
+	}
+	.w-team-info{
+		.team-info{
+			left: 0;
+		}
+	}
+	#partners-2{
+		margin: 32px 0;
+	}
 }
 .active > a{
 	color: $blue !important;
@@ -743,7 +902,9 @@ background: url("/assets/subtle-grid.gif");
 
 }
 
-
+.margin-36{
+	margin-top: 36px;
+}
 .centered {
    display: table-cell;
    text-align: center;
@@ -751,3 +912,20 @@ background: url("/assets/subtle-grid.gif");
    height: 275px;
    min-width: 960px;
 }
+.centered-1 {
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+   height: 1px;
+   min-width: 960px;
+}
+.no-margin{
+	margin: 0;
+}
+.no-margin-b{
+	margin-bottom: 0;
+}
+.dropdown-menu > .active > a {
+	color:#fff !important;
+}
+.brand{ color: inherit;}
