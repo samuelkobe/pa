@@ -929,3 +929,22 @@ background: url("/assets/subtle-grid.gif");
 	color:#fff !important;
 }
 .brand{ color: inherit;}
+.blocker{
+	position: fixed;
+
+	top:0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background: rgba(0,0,0,.85);
+
+	&:after{
+		position: absolute;
+		content: " ";
+		background: url(pa-launches-tomorrow.png) no-repeat center center;
+		height: 100%;
+		width: 100%;
+
+	}
+}
