@@ -1,31 +1,36 @@
 
 <!-- start of hero-->
 <section id ="hero" class="tall">
-    <div class="one-third hidden-tablet hidden-phone"></div>
-    <div class="two-thirds">
+    
+    <div class="tall">
 		<div class="container-fluid tall">
 			<div class="row-fluid tall">
 				<div class="span8 tall pull-right mobile-height">
-			      <%= image_tag("big-billboard.png", :alt => "Potential Apparel billboard", :class => "hero-img") %>
+				  	<div class="w-billboard tall">
+				  		<div class="billboard">
+			      			<%= image_tag("big-billboard.png", :alt => "Potential Apparel billboard", :class => "hero-img") %>
+			      		</div>
+			  		</div>
 			    </div>
-			    <div class="span4 height-100">
-			    <div class="call-to-action">
-					<h2>Potential Apparel is building the World's Largest Billboard.</h2>
-			
-					<h5>Here's what we mean: </h5>
-					<p>We are encouraging everyone to donate the advertising space of
-						their t-shirts, tanks and hoodies to the Potential Apparel "Billboard".
-					</p>
-					<p >Side by side Potential Apparel wearers support underprivileged youth through sport and help unlock their potential.
-						Five to nine dollars from every item sold will be donated to our 
-						partnered charities <i><a href="http://www.righttoplay.com/canada/Pages/landing.aspx" class="charity_link">Right to Play</a></i> 
-						and <i><a href="http://www.heroshockey.com/" class="charity_link">HEROS Hockey</a><i>.</i></i></p><i><i></i></i>
-				</div>
-					<div class="move-down hidden-tablet hidden-phone">
-						<h5>A whole new way to help.</h5>
-						<button class="btn btn-inverse btn-large no-margin">Coming Soon</button>
+			    <div class="span4 tall call-to-action-info">
+				    <div class="w-call-to-action">
+					    <div class="call-to-action">
+							<h2>Potential Apparel is building the World's Largest Billboard.</h2>
+							<h5>Here's what we mean: </h5>
+							<p>We are encouraging everyone to donate the advertising space of
+								their t-shirts, tanks and hoodies to the Potential Apparel "Billboard".
+							</p>
+							<p >Side by side Potential Apparel wearers support underprivileged youth through sport and help unlock their potential.
+								Five to nine dollars from every item sold will be donated to our 
+								partnered charities <i><a href="http://www.righttoplay.com/canada/Pages/landing.aspx" class="charity_link">Right to Play</a></i> 
+								and <i><a href="http://www.heroshockey.com/" class="charity_link">HEROS Hockey</a><i>.</i></i></p><i><i></i></i>
+						</div>
+						<div class="move-down">
+							<h5>A whole new way to help.</h5>
+							<button class="btn btn-inverse btn-large no-margin-top">Coming Soon</button>
+						</div>
 					</div>
-			    </div>
+				</div>
 		    </div>
 		</div>
 	</div>
@@ -50,19 +55,16 @@
 				<div id="this-carousel-id" class="carousel slide span12 no-margin-b">
 				  <div class="carousel-inner">
 				    <div class="item active">
-					 <%= image_tag("models-slider1.png") %>
+				    	<img src="http://placehold.it/350x150" >
+					 
 					</div>
 				    <div class="item">
-				     <%= image_tag("models-placeholder.jpg") %>
+				     <img src="http://placehold.it/350x150" >
 				    </div>
 				    <div class="item">
-				      <%= image_tag("models-placeholder.jpg") %>
-				    </div>
-				    <div class="item">
-				      <%= image_tag("models-placeholder.jpg") %>
+				      <img src="http://placehold.it/350x150" >
 				    </div>
 				  </div>
-
 				    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
 				    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
 				</div>
@@ -90,14 +92,14 @@
 		<div class="row roster-well">
 			<div class="span6">
 				<div class="player-image tall pixel-push">
-					<%= image_tag("1-gallagher.jpg") %>
+					<%= image_tag("1-gallagher.jpg", :class => "laz") %>
 				<div class="player-info-right no-left tall span2">
 					<div class="player-padding">
 						<h3 class="player-name"><span class="first-name">Brendan</span> <span class="last-name">Gallagher</span></h3>
 						<p class="twitter-handle"><a href="#">@bgally17</a></p>
 
 						<h5 class="team-name"><span class="city">Montreal</span> <span class="team-name">Canadiens</span></h5>
-						<div class="team-logo montreal"></div>
+						<div class="team-logo montreal visible-desktop"></div>
 					</div>
 				</div>
 				</div>
@@ -269,7 +271,7 @@
 	</div>
 
 </section>
-<section id ="partners" class="frame">
+<section id ="partners" class="frame padding-bottom">
 	<div class="container tall">
 		<div class="pad-top"></div>
 		<div class="row">
@@ -283,26 +285,27 @@
 				</div>
 			</div>
 			<div class="span8 tall hidden-phone">
-				<iframe width="100%" height="500px" src="http://www.youtube.com/embed/m_RfeSl3dUc" frameborder="0" allowfullscreen></iframe>
+				<iframe width="100%" height="500" src="http://www.youtube.com/embed/m_RfeSl3dUc" frameborder="0" allowfullscreen></iframe>
 				
 			</div>
 		</div>
 </section><!--end of roster-->
-<section id ="partners-2" class="frame">
+<section id ="partners-2" class="frame padding-bottom">
 	<div class="container tall">
-	<div class="pad-top"></div>
-	<div class="row">
+		<div class="pad-top"></div>
+		<div class="row">
 
-		<div class="span8 tall hidden-phone">
-			<iframe width="100%" height="500px" src="http://www.youtube.com/embed/jIi7jCx5wJg" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<div class="span3 partners-info">
-			<div class="padding">
-				<h2 class="partner-header">OUR PARTNERS</h2>
-				<h3 class="partner-subheader">HEROES Hockey</h3>
-				<h4 class="partner-flavor">Empowering children on ice</h4>
-				<p class="partner-para">The Hockey Education Reaching Out Society is a registered Canadian charitable organization committed to empowering children through ice hockey. The premise of HEROS is to use the game of hockey as a catalyst to attract youth to a program offering support for education self-esteem building and life skills training. The program focuses on boys and girls of diverse ethnicity from economically challenged neighborhoods. The program will be conducted in an environment of fun and safety where each child is considered to be a HERO.</p>
-				<button class="btn btn-large gear-up no-margin-b">Gear Up</button>
+			<div class="span8 tall hidden-phone">
+				<iframe width="100%" height="500px" src="http://www.youtube.com/embed/jIi7jCx5wJg" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="span3 partners-info">
+				<div class="padding">
+					<h2 class="partner-header">OUR PARTNERS</h2>
+					<h3 class="partner-subheader">HEROES Hockey</h3>
+					<h4 class="partner-flavor">Empowering children on ice</h4>
+					<p class="partner-para">The Hockey Education Reaching Out Society is a registered Canadian charitable organization committed to empowering children through ice hockey. The premise of HEROS is to use the game of hockey as a catalyst to attract youth to a program offering support for education self-esteem building and life skills training. The program focuses on boys and girls of diverse ethnicity from economically challenged neighborhoods. The program will be conducted in an environment of fun and safety where each child is considered to be a HERO.</p>
+					<button class="btn btn-large gear-up no-margin-b">Gear Up</button>
+				</div>
 			</div>
 		</div>
 	</div>
