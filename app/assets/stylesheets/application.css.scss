@@ -367,7 +367,7 @@ $sansFontFamily: 'Open Sans', sans-serif !default;
 //hero
 .hero-img{
 	position: absolute;
-	bottom: 0;
+	bottom: 10px;
 	right: 2.5em;
 }
 .w-potential-logo{
@@ -435,7 +435,7 @@ background: url("/assets/subtle-grid.gif");
 }
 
 #roster{
-	background: url(stadium-lores.jpg) no-repeat center center fixed;
+	background: url(https://s3.amazonaws.com/potential-apparel-site-bucket/home/deployer/apps/pa/adhoc-image/stadium-lores.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -581,7 +581,7 @@ background: url("/assets/subtle-grid.gif");
 	color: #fff;
 }
 #partners{
-	background: url(rtpimg.jpg) no-repeat center center fixed;
+	background: url(https://s3.amazonaws.com/potential-apparel-site-bucket/home/deployer/apps/pa/adhoc-image/rtpimg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -589,7 +589,7 @@ background: url("/assets/subtle-grid.gif");
 }
 
 #partners-2{
-	background: url(hhimg.jpg) no-repeat center center fixed;
+	background: url(https://s3.amazonaws.com/potential-apparel-site-bucket/home/deployer/apps/pa/adhoc-image/hh-img3.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -723,8 +723,17 @@ background: url("/assets/subtle-grid.gif");
 	position: absolute;
 	bottom: 0;
 	background: #000;
-	height: 75px;
+	height: 50px;
 	width: 100%;
+	p{
+		line-height: 50px;
+		color: #fff;
+		font-size: 12px;
+	}
+	.faq{
+		text-align: right;
+		margin-right: 30px;
+	}
 }
 
 
@@ -787,7 +796,6 @@ background: url("/assets/subtle-grid.gif");
 //contact 
 #contact{
 	position: relative;
-	background: url("/assets/contact.jpg");
 	@include background-size(cover);
 
 	h3, p{
@@ -850,10 +858,6 @@ background: url("/assets/subtle-grid.gif");
 			left: 0;
 		}
 	}
-	.w-call-to-action{
-		position: relative;
-		bottom: 0;
-	}
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -880,10 +884,6 @@ background: url("/assets/subtle-grid.gif");
 		.team-info{
 			left: 0;
 		}
-	}
-	.w-call-to-action{
-		position: relative;
-		bottom: 0;
 	}
 	.w-billboard{
 		position: relative;
@@ -933,7 +933,8 @@ background: url("/assets/subtle-grid.gif");
 	}
 	.w-call-to-action{
 		position: relative;
-		bottom: 0;
+	top: 0;
+	margin-top: 0;
 	}
 }
 .active > a{
@@ -973,8 +974,9 @@ background: url("/assets/subtle-grid.gif");
 	color:#fff !important;
 }
 .brand{ color: inherit;}
-.margin-push-top{
-	margin-top: 72px;
+
+.padding-push-top{
+	margin-top: 55px;
 }
 
 .blocker{
@@ -990,10 +992,11 @@ background: url("/assets/subtle-grid.gif");
 	&:after{
 		position: absolute;
 		content: " ";
-		background: url(pa-launching-today.png) no-repeat center center;
+		background: url(https://s3.amazonaws.com/potential-apparel-site-bucket/home/deployer/apps/pa/adhoc-image/pa-launching-today-patience.png) no-repeat center center;
 		height: 100%;
 		width: 100%;
 		background-size: auto 100%;
 
 	}
 }
+
