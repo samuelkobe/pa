@@ -1,0 +1,31 @@
+#potential-store-nav {
+	background-color: #000;
+	height: 40px;
+}
+
+#potential-apparel-inner-nav {
+	line-height: 40px;
+	li {
+		padding: 0 16px;
+		a {
+			font-family: "Open Sans";
+			font-size: 14px;
+			color: #fff;
+		}
+		.brand {
+			font-size: 20px;
+			font-weight: 400;
+			color: #fff;
+			text-shadow: 0 1px 0 #000;
+		}
+	}
+}
+
+#link-to-cart {
+	float: right;
+	a.full {
+		font-size: 20px;
+		color: #08c;
+		font-weight: 400;
+	}
+}
