@@ -515,7 +515,14 @@ background: url("/assets/subtle-grid.gif");
 	color: #fff;
 	padding: 0;
 	font-size: 16px;
+	p{
+    font-size: 12px;
+    margin: 0;
+    font-weight: 400;
+
+	}
 }
+
 .city{
 	color: #fff;
 	display: block;
@@ -532,6 +539,7 @@ background: url("/assets/subtle-grid.gif");
 	padding: 0;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 0px #000;
+	font-size: 22.5px;
 	.first-name{
 		font-weight:400;
 		display:block
@@ -542,29 +550,88 @@ background: url("/assets/subtle-grid.gif");
 	
 }
 .team-logo{
-	background:url(team-sprite.png) 0 0;
+	background:url(https://s3.amazonaws.com/online-static-potential-bucket/images/team-sprite.png) 0 0;
 	height: 50px;
 	width: 50px;
 	margin-top: -10px;
 }
+
+.emptyroster {
+	height: 214px;
+}
 .montreal{
 	background-position:0 0;
 }
-.edmonton{
-	background-position:50px 0;
-}
-.buffalo{
-	background-position:100px 0;
+.columbus {
+	background-position:-50px 0;
 }
 .detroit{
-	background-position:150px 0;
+	background-position:-100px 0;
 }
-.columbus{
-	background-position:200px 0;
+.buffalo{
+	background-position:-150px 0;
+}
+.edmonton{
+	background-position:-200px 0;
+}
+//edit these
+.boston{
+	background-position:-250px 0;
+}
+.dallas{
+	background-position:-300px 0;
+}
+.nashville{
+	background-position:-350px 0;
+}
+.nhl{
+	background-position:-400px 0;
+}
+.newyork{
+	background-position:-450px 0;
+}
+.stlouis{
+	background-position:-500px 0;
+}
+.winnipeg{
+	background-position:-550px 0;
+}
+.idaho{
+	background-position:-600px 0;
+}
+.hitmen{
+	background-position:-650px 0;
+}
+.mississippi{
+	background-position:-700px 0;
+}
+.everett{
+	background-position:-750px 0;
+}
+.minnesota{
+	background-position:-800px 0;
+}
+.stu{
+	background-position:-850px 0;
+}
+.medicinehat{
+	background-position:-900px 0;
+}
+.hungary{
+	background-position:-950px 0;
+}
+.ubc{
+	background-position:-1000px 0;
+}
+.hamburg{
+	background-position:-1050px 0;
+}
+.uofa{
+	background-position:-1100px 0;
 }
 
 .twitter-handle{
-		padding-bottom: 30px;
+		padding-bottom: 20px;
 		a{
 			text-shadow: 1px 1px 0px #000;
 			&:hover{
@@ -572,6 +639,7 @@ background: url("/assets/subtle-grid.gif");
 			} 
 		}
 	}
+
 
 //partners
 .partners-info{
@@ -890,6 +958,25 @@ background: url("/assets/subtle-grid.gif");
 	.billboard{
 		position: absolute;
 		bottom: 0;
+	}
+	.player-name{
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.twitter-handle{
+		padding-bottom: 0;
+
+		font-size: 10px;
+	}
+	.team-name{
+		font-size: 12px;
+	}
+	.team-logo{
+		display: none;
+		visibility: hidden;
+	}
+	.long-name{
+		font-size: 12px;
 	}
 }
 
