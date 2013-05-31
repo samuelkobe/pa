@@ -107,7 +107,12 @@ ul#products li .product-image {
 	border: #f5f5f5 solid 1px;
 	padding: 0px;
 	min-height: 220px;
-	background-color: #fff;
+	background-color: #f5f5f5	;
+}
+
+#product-images #main-image {
+	background-color: #f5f5f5;
+	border:none;
 }
 
 .product-image {
