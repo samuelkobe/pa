@@ -935,6 +935,11 @@ background: url("/assets/subtle-grid.gif");
 	top: 0;
 	margin-top: 0;
 	}
+	.bottom-line{
+		position: relative;
+		color: #fff;
+		text-align: center;
+	}
 }
 .active > a{
 	color: $blue !important;
@@ -1000,3 +1005,5 @@ background: url("/assets/subtle-grid.gif");
 }
 
 */
+
+
