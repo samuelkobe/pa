@@ -1,5 +1,5 @@
 Deface::Override.new(:virtual_path   => "spree/layouts/spree_application",
-                     :insert_before  => ".container",
+                     :insert_top  => "[data-hook='body']",
                      :text           => "<nav id='potential-store-nav'></nav>",
                      :name           => "potential_store_nav")
 
