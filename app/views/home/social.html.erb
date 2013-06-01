@@ -6,29 +6,29 @@
 		<div class="row social-call-to-action">
 			<div class="span4 social-steps">
 				<div class="social-steps-info-wrapper">
-					<div class="social-icon"><%= image_tag("facebook-circle-bw.png") %></div>
-					<h5>Post a photo wearing Potential Apparel</h5>
+					<div class="social-icon"><%= link_to image_tag("facebook-circle-bw.png"), 'http://www.facebook.com/potentialapparel', :target => "_blank" %></div>
+					<h4 class="header-social-title">Facebook Users:</h4>
+					<h5 class="header-social-h6"><b>Post a photo to our page!</b></h5>
 					<p>
-						When you post a photo wearing your Potential Apparel on your facebook timeline or on your instagram account, we’ll donate an extra dollar to our partnered charities and organizations. Just tag <a href="#" >@Potential Apparel</a> when you post to your wall, or use hashtag <a href="#" >#PotentialApparel</a> on instagram.
-					</p>
+When you post a photo wearing your Potential Apparel to our facebook page and tag your post with <%= link_to "@PotentialApparel", "http://www.facebook.com/potentialapparel", :target => "_blank" %>, we’ll <b>donate an extra dollar</b> to our partnered charities. It’s as simple as that! See terms of service for details.					</p>
 				</div>
 			</div>
 			<div class="span4 social-steps">
 				<div class="social-steps-info-wrapper">
-					<div class="social-icon"><%= image_tag("instagram-circle-bw.png") %></div>
-					<h5>Share our goal with the world</h5>
+					<div class="social-icon"><%= link_to image_tag("instagram-circle-bw.png"), "http://www.instagram.com/potentialsays", :target => "_blank" %></div>
+					<h4 class="header-social-title">Instagram Users:</h4>
+					<h5 class="header-social-h6"><b>Show off your new apparel!</b></h5>
 					<p>
-						Et ut de eat. Fugita cusdae cust volum et omnimag nimoluptatas adiaect ionectem rent ea dolor caborerrum quia quia pres es dunt fugitat quate volumet quunduciis auteste destectat.
-					</p>
+If you use instagram, tag a photo of yourself wearing your Potential Apparel with <%= link_to "#PotentialApparel", "http://www.instagram.com/potentialsays", :target => "_blank" %>. We’ll donate an extra dollar to our partnered charities! See terms of service for details.					</p>
 				</div>
 			</div>
 			<div class="span4 social-steps">
 				<div class="social-steps-info-wrapper">
-					<div class="social-icon"><%= image_tag("twitter-circle-bw.png") %></div>
-					<h5>Join the conversation on Twitter</h5>
+					<div class="social-icon"><%= link_to image_tag("twitter-circle-bw.png"), "http://www.twitter.com/potentialsays", :target => "_blank" %></div>
+					<h4 class="header-social-title">Twitter Users:</h4>
+					<h5 class="header-social-h6"><b>Help us spread the word!</b></h5>
 					<p>
-						Et ut de eat. Fugita cusdae cust volum et omnimag nimoluptatas adiaect ionectem rent ea dolor caborerrum quia quia pres es dunt fugitat quate volumet quunduciis auteste destectat.
-					</p>
+Be sure to follow our twitter handle <%= link_to "@PotentialSays", "http://www.twitter.com/potentialsays", :target => "_blank" %> to get our latest updates. Follow our pro athletes on our <%= link_to "Roster Page", root_url(:anchor => "roster"), 'data-target' => '#roster', :class => 'normal' %> and retweet their messages about us to spread the word about Potential!					</p>
 				</div>
 			</div>
 		</div>

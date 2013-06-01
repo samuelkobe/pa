@@ -809,6 +809,9 @@ background: url("/assets/subtle-grid.gif");
 
 .social-steps-info-wrapper{
 	text-align: center;
+	p{
+		text-align: left;
+	}
 }
 
 .social-call-to-action{
@@ -926,6 +929,10 @@ background: url("/assets/subtle-grid.gif");
 			left: 0;
 		}
 	}
+	.potential-team-names{
+		float: right;
+		width: 400px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -979,6 +986,7 @@ background: url("/assets/subtle-grid.gif");
 	.long-name{
 		font-size: 12px;
 	}
+
 }
 
 // Phones only
@@ -1090,4 +1098,16 @@ background: url("/assets/subtle-grid.gif");
 		background-size: auto 100%;
 
 	}
+}
+
+.apparel-bottom-style {
+	padding-bottom: 36px;
+}
+.header-social-title{
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+}
+.header-social-h6{
+	margin: 0px 0 10px;
 }
