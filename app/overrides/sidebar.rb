@@ -7,6 +7,11 @@ Deface::Override.new(:virtual_path  => "spree/shared/_sidebar",
                      :text          => "<h2 class='store-title'>Store</h2>",
                      :name          => "InsertTitle")
 
+Deface::Override.new(:virtual_path  => "spree/shared/_sidebar",
+                     :insert_before => "h2.store-title",
+                     :text          => "<%= image_tag('https://s3.amazonaws.com/online-static-potential-bucket/images/store-banner.jpg', :style => 'width:100%;')",
+                     :name          => "bannerImage")                                          
+
 Deface::Override.new(:virtual_path      => "spree/shared/_sidebar",
                      :set_attributes    => "#sidebar",
                      :attributes        => { :class => "row" },
