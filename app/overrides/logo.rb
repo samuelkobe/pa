@@ -1,11 +1,6 @@
 Deface::Override.new(:virtual_path  => "spree/shared/_header",
                      :remove        => "#logo",
                      :name          => "DeleteLogo")
-
-Deface::Override.new(:virtual_path  => "spree/shared/_products",
-                     :insert_before => "#products",
-                     :text          => "<h2 class='store-title'>Store</h2>",
-                     :name          => "InsertTitle")
                      
 Deface::Override.new(:virtual_path  => "spree/products/show",
                      :insert_before => "[data-hook='product_show']",

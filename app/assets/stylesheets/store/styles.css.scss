@@ -43,6 +43,7 @@ body {
 	line-height: 40px;
 	li {
 		padding: 0 16px;
+		display: inline-block;
 		a {
 			font-family: "Open Sans", sans-serif;
 			font-size: 14px;
@@ -189,6 +190,20 @@ ul#products li .price, .pagination span a {
 .add-to-cart{
 	margin-bottom: 36px;
 }
+.taxons-list{
+	display: inline-block;
+	li{
+		display: inline-block;
+		padding: 0 5px;
+	}
+}
+
+@media (max-width: 480px) {
+	#potential-apparel-inner-nav li a.empty {
+		color: #333;
+	}
+}
+
 #ad_hoc_options{
 	width: 280px;
 	h3{
