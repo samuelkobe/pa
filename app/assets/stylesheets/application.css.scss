@@ -835,10 +835,14 @@ background: url("/assets/subtle-grid.gif");
 .carousel-control.left{
 	left: -72px;
 	top: 50%;
+	padding-right: 3px;
+	padding-bottom: 2px;
 }
 .carousel-control.right{
 	right: -72px;
 	top: 50%;
+	padding-left: 3px;
+	padding-bottom: 2px;
 }
 
 //potential team
@@ -994,7 +998,7 @@ background: url("/assets/subtle-grid.gif");
    .height-66 { height:100% }
    .tall{height:auto} 
    .frame{ height: auto; min-height: auto; padding:0; margin:0;}
-   .hero-img {position: relative;}
+   .hero-img {position: relative; padding-left: 30px;}
    .message {padding: 0}
    #roster {background: #000;}
    .player-info-left{
@@ -1009,6 +1013,7 @@ background: url("/assets/subtle-grid.gif");
 	}
 	.video-block{
 		width: 100%;
+		height: 200px;
 	}
 	.carousel-control.left{
 		left: 0px;
@@ -1027,9 +1032,12 @@ background: url("/assets/subtle-grid.gif");
 		margin: 32px 0;
 	}
 	.w-call-to-action{
-		position: relative;
+	position: relative;
 	top: 0;
 	margin-top: 0;
+		.call-to-action h2 {
+			text-align: center;
+		}
 	}
 	.bottom-line{
 		position: relative;
@@ -1110,4 +1118,20 @@ background: url("/assets/subtle-grid.gif");
 }
 .header-social-h6{
 	margin: 0px 0 10px;
+}
+
+
+
+//MOBILE EDITS
+
+h4 {
+	padding-left: 15px;
+	a.mobile-header-link {
+		color: #fff;
+		font-weight: 400;
+		font-family: "Open Sans", "sans-serif";
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }

@@ -20,8 +20,8 @@
 							<p>We are encouraging everyone to donate the advertising space of
 								their t-shirts, tanks and hoodies to the Potential Apparel "Billboard".
 							</p>
-							<p>Side by side Potential Apparel wearers support underprivileged youth through sport and help unlock their potential.  Five to nine dollars from every item sold will be donated to our partnered charities <i><a href="http://www.righttoplay.com/canada/Pages/landing.aspx" class="charity_link">Right to Play</a></i> 
-								and <i><a href="http://www.heroshockey.com/" class="charity_link">HEROS Hockey</a><i>.</i></i></p><i><i></i></i>
+							<p>Side by side Potential Apparel wearers support underprivileged youth through sport and help unlock their potential.  Five to nine dollars from every item sold will be donated to our selected charities <i><%= link_to "Right To Play", root_url(:anchor => "partners"), 'data-target' => '#partners', :class => 'normal' %></i> 
+								and <i><%= link_to "Heroes Hockey", root_url(:anchor => "partners-2"), 'data-target' => '#partners-2', :class => 'normal' %>.</i></p>
 						</div>
 						<div class="move-down">
 							<h5>A whole new way to help.</h5>
@@ -52,13 +52,13 @@
 				<div id="this-carousel-id" class="carousel slide span12 no-margin-b">
 				  <div class="carousel-inner">
 				    <div class="item active">
-				    	<img src="https://s3.amazonaws.com/online-static-potential-bucket/images/models-slider/models-slider1.png" >
+				    	<a href= "http://store.potentialapparel.com" target="_blank"><img src='https://s3.amazonaws.com/online-static-potential-bucket/images/models-slider/models-slider1.png' /></a>
 					</div>
 				    <div class="item">
-				     <img src="https://s3.amazonaws.com/online-static-potential-bucket/images/models-slider/models-slider2.png" >
+				     <a href= "http://store.potentialapparel.com" target="_blank"><img src="https://s3.amazonaws.com/online-static-potential-bucket/images/models-slider/models-slider2.png" /></a>
 				    </div>
 				    <div class="item">
-				      <img src="https://s3.amazonaws.com/online-static-potential-bucket/images/models-slider/models-slider3.png" >
+				      <a href= "http://store.potentialapparel.com" target="_blank"><img src="https://s3.amazonaws.com/online-static-potential-bucket/images/models-slider/models-slider3.png" /></a>
 				    </div>
 				  </div>
 				    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
@@ -749,9 +749,9 @@
 		<div class="row">
 			<div class="span3 partners-info">
 				<div class="padding">
-					<h2 class="partner-header">OUR PARTNERS</h2>
-					<h3 class="partner-subheader">Right To Play</h3>
-					<h4 class="partner-flavor">When chlidren play, the world wins.</h4>
+					<h2 class="partner-header">OUR CAUSES</h2>
+					<h3 class="partner-subheader"><%= link_to "Right To Play", "http://www.righttoplay.com/canada/pages/home.aspx", :target => "_blank" %></h3>
+					<h4 class="partner-flavor">When children play, the world wins.</h4>
 					<p class="partner-para">Right To Play is an international humanitarian organization that uses sport and play programs to improve health, develop life skills, and foster peace for children and communities in some of the most disadvantaged areas of the world. Working in both the humanitarian and development context, Right To Play builds local capacity by training community leaders as Coaches to deliver its programs in 20 countries affected by war, poverty, and disease in Africa, Asia, the Middle East and South America. The national offices raise funds, build awareness for Right To Play programs and advocate for Sport for Development.</p>
 					<%= link_to(content_tag(:button, "Go to Store", :class => "btn btn-large gear-up no-margin-b"), "http://store.potentialapparel.com", :class => "") %>
 				</div>
@@ -773,8 +773,8 @@
 			</div>
 			<div class="span3 partners-info">
 				<div class="padding">
-					<h2 class="partner-header">OUR PARTNERS</h2>
-					<h3 class="partner-subheader">HEROES Hockey</h3>
+					<h2 class="partner-header">OUR CAUSES</h2>
+					<h3 class="partner-subheader"><%= link_to "HEROES Hockey", "http://www.heroshockey.com/", :target => "_blank" %></h3>
 					<h4 class="partner-flavor">Empowering children on ice</h4>
 					<p class="partner-para">The Hockey Education Reaching Out Society is a registered Canadian charitable organization committed to empowering children through ice hockey. The premise of HEROS is to use the game of hockey as a catalyst to attract youth to a program offering support for education self-esteem building and life skills training. The program focuses on boys and girls of diverse ethnicity from economically challenged neighborhoods. The program will be conducted in an environment of fun and safety where each child is considered to be a HERO.</p>
 					<%= link_to(content_tag(:button, "Go to Store", :class => "btn btn-large gear-up no-margin-b"), "http://store.potentialapparel.com", :class => "") %>
