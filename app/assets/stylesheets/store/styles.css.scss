@@ -7,6 +7,12 @@ body {
 	padding: 24px 0px; 
 }
 
+nav.pagination {
+	padding-bottom: 36px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 16px;
+}
+
 .button_to {
 	position: absolute;
 	input[type="submit"], input[type="button"], input[type="reset"], button, a.button {
@@ -198,9 +204,31 @@ ul#products li .price, .pagination span a {
 	}
 }
 
-@media (max-width: 480px) {
-	#potential-apparel-inner-nav li a.empty {
-		color: #333;
+@media (max-width: 767px) {
+	footer#footer {
+		padding-bottom: 80px;
+		.container {
+			padding: 0 20px;
+		}
+	}
+	.terms-wrap {
+		text-align: center;
+		.faq {
+			text-align: center;
+		}
+	}
+	#potential-store-nav {
+		height: 90px;
+	}
+	#potential-apparel-inner-nav li .brand {
+		font-size: 16px;
+		padding-left: 8px;
+	}
+	ul#products li .product-image {
+		min-height: 0;
+	}
+	ul#products li .price {
+		padding-bottom: 16px;
 	}
 }
 

@@ -769,7 +769,7 @@ background: url("/assets/subtle-grid.gif");
 .footer-splash{
 	position: relative;
 	background:#333;
-	height:500px;
+	min-height:500px;
 	width:100%;
 }
 .w-footer-info{
@@ -1043,6 +1043,31 @@ background: url("/assets/subtle-grid.gif");
 		position: relative;
 		color: #fff;
 		text-align: center;
+	}
+	.item {
+		min-height: 100px;
+	}
+	.block-mobile {
+		text-align: center;
+	}
+	#partners{
+		background: #000;
+	}
+
+	#partners-2{
+		background: #000;
+	}
+	#contact {
+		padding-bottom: 80px;
+		.container {
+			padding: 0 20px;
+		}
+	}
+	.terms-wrap {
+		text-align: center;
+		.faq {
+			text-align: center;
+		}
 	}
 }
 .active > a{

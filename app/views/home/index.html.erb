@@ -67,7 +67,10 @@
 		    </div>
 		</div>
 		<div class="container">
-			<div class="span3 offset9 concept-button">
+			<div class="span3 offset9 concept-button block-mobile visible-phone">
+				<%= link_to(content_tag(:button, "Go to Store", :class => "btn btn-inverse btn-large"), "http://store.potentialapparel.com") %>
+			</div>
+			<div class="span3 offset9 concept-button visible-desktop visible-tablet">
 				<a class="normal" data-target="#roster" href="#roster"><button class="btn btn-inverse btn-large">See our Roster</button></a>
 			</div>
 		</div>
@@ -75,7 +78,7 @@
 </section>
 <!-- end of concept -->
 <!-- roster start-->
-<section id ="roster" class="frame">
+<section id ="roster" class="frame visible-desktop visible-tablet">
 	<div class="container tall">
 		<div class="row relative">
 			<div class="span1">
@@ -661,7 +664,7 @@
 		</div>
 	</div>
 </section><!--end of roster-->
-<section id ="apparel" class="frame">
+<section id ="apparel" class="frame visible-desktop visible-tablet">
 	<div class="container apparel-bottom-style">
 		<div class="row relative">
 			<div class="span3 ">
