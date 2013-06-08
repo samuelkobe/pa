@@ -730,6 +730,11 @@ background: url("/assets/subtle-grid.gif");
 @import "bootstrap-responsive";
 //import end
 
+.social-nav-icon-links {
+	width: 24px;
+	padding: 3px;
+}
+
 .btn{
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
@@ -772,6 +777,12 @@ background: url("/assets/subtle-grid.gif");
 	min-height:500px;
 	width:100%;
 }
+
+.social-footer-images {
+	width: 48px;
+	padding: 6px;
+}
+
 .w-footer-info{
 	color: #fff;
 	margin-top: 72px;
@@ -801,6 +812,7 @@ background: url("/assets/subtle-grid.gif");
 	.faq{
 		text-align: right;
 		margin-right: 30px;
+		background-color: #000;
 	}
 }
 

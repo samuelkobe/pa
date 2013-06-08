@@ -16,6 +16,7 @@
           <li><%= link_to "Concept", root_url(:anchor => "concept"), 'data-target' => '#concept', :class => 'normal' %></li>
           <li><%= link_to "Roster", root_url(:anchor => "roster"), 'data-target' => '#roster', :class => 'normal hidden-phone' %></li>
           <li><%= link_to "Store", "http://store.potentialapparel.com" %></li>
+          <li><%= link_to "Social", social_home_path %></li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Causes<b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -27,7 +28,6 @@
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact<b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><%= link_to "Social", social_home_path(:anchor => "social"), 'data-target' => '#social' %></li>
               <li><%= link_to "Team", team_home_path(:anchor => "team"), 'data-target' => '#team' %></li>
               <li><%= link_to "Contact", root_url(:anchor => "contact"), 'data-target' => '#contact', :class => 'normal' %></li>
             </ul>
@@ -35,7 +35,11 @@
 
         </ul>
        
-        <p class="navbar-text pull-right visible-desktop"><%= link_to 'Login', "https://store.potentialapparel.com/login" %> / <%= link_to 'Signup', "https://store.potentialapparel.com/signup" %></p>
+        <p class="navbar-text pull-right visible-desktop">
+			<%= link_to image_tag("facebook-circle-wb.png", :class => "social-nav-icon-links"), 'http://www.facebook.com/potentialapparel', :target => "_blank" %>
+			<%= link_to image_tag("instagram-circle-wb.png", :class => "social-nav-icon-links"), "http://www.instagram.com/potentialsays", :target => "_blank" %>
+			<%= link_to image_tag("twitter-circle-wb.png", :class => "social-nav-icon-links"), "http://www.twitter.com/potentialsays", :target => "_blank" %>
+		</p>
       </div><!--/.nav-collapse -->
 
     </div>
