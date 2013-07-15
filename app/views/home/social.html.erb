@@ -1,16 +1,29 @@
 <section id ="social" class="frame">
 	<div class="container">
 		<div class="row">
-			<div class="span12"><h3>SPREAD THE WORD</h3></div>
+			<div class="span12"><h3>MORE WAYS TO HELP</h3></div>
 		</div>
 		<div class="row social-call-to-action">
 			<div class="span4 social-steps">
 				<div class="social-steps-info-wrapper">
-					<div class="social-icon"><%= link_to image_tag("facebook-circle-bw.png"), 'http://www.facebook.com/potentialapparel', :target => "_blank" %></div>
-					<h4 class="header-social-title">Facebook Users:</h4>
-					<h5 class="header-social-h6"><b>Post a photo to our page!</b></h5>
+					<div class="social-icon"><%= link_to image_tag("twitter-circle-bw.png"), 'http://www.twitter.com/potentialsays', :target => "_blank" %></div>
+					<h4 class="header-social-title">Twitter Users:</h4>
+					<h5 class="header-social-h6"><b>Use a donation code!</b></h5>
 					<p>
-When you post a photo wearing your Potential Apparel to our Facebook page and tag your post with <%= link_to "@PotentialApparel", "http://www.facebook.com/potentialapparel", :target => "_blank" %>, we’ll <b>donate an extra dollar</b> to our partnered charities. It’s as simple as that! See terms of service for details.</p>
+					Be sure to follow our twitter handle <%= link_to "@PotentialSays", "http://www.twitter.com/potentialsays", :target => "_blank" %> to get our latest updates. 
+					Plus, follow our pro athletes on our <%= link_to "Roster Page", "http://www.potentialapparel.com/#roster" %> and use their donation codes while you check out to <b>donate an extra dollar</b> to our charities! See terms of service for details.	
+					</p>
+				</div>
+			</div>
+			<div class="span4 social-steps">
+				<div class="social-steps-info-wrapper">
+					<div class="social-icon"><%= link_to image_tag("facebookplustwitter.png"), "http://www.facebook.com/potentialapparel", :target => "_blank" %></div>
+					<h4 class="header-social-title">Facebook + Twitter Users:</h4>
+					<h5 class="header-social-h6"><b>Donate with one easy post!</b></h5>
+					<p>
+						After you check out, review your order and click the “Donate with a Tweet or Post ” button. Sign in with your twitter or facebook account,  submit your post, and we’ll <b>donate a second extra dollar</b> on your behalf! 
+						See terms of service for details.
+					</p>
 				</div>
 			</div>
 			<div class="span4 social-steps">
@@ -19,31 +32,8 @@ When you post a photo wearing your Potential Apparel to our Facebook page and ta
 					<h4 class="header-social-title">Instagram Users:</h4>
 					<h5 class="header-social-h6"><b>Show off your new apparel!</b></h5>
 					<p>
-If you use Instagram, tag a photo of yourself wearing your Potential Apparel with <%= link_to "#PotentialApparel", "http://www.instagram.com/potentialsays", :target => "_blank" %>. We’ll donate an extra dollar to our partnered charities! See terms of service for details.</p>
-				</div>
-			</div>
-			<div class="span4 social-steps">
-				<div class="social-steps-info-wrapper">
-					<div class="social-icon"><%= link_to image_tag("twitter-circle-bw.png"), "http://www.twitter.com/potentialsays", :target => "_blank" %></div>
-					<h4 class="header-social-title">Twitter Users:</h4>
-					<h5 class="header-social-h6"><b>Help us spread the word!</b></h5>
-					<p>
-Be sure to follow our Twitter handle <%= link_to "@PotentialSays", "http://www.twitter.com/potentialsays", :target => "_blank" %> to get our latest updates. Follow our pro athletes on our <%= link_to "Roster Page", root_url(:anchor => "roster"), 'data-target' => '#roster', :class => 'normal' %> and retweet their messages about us to spread the word about Potential!</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div id="this-carousel-id" class="carousel slide span12">
-				<div class="carousel-inner">
-					<% @tweets.first( 5 ).each do |tweet| %>
-						<% if @tweets.index(tweet) == 0 %>
-								<div class="item active social-min block"><h1 class="tweet-feed centered"><%= tweet['text'] %></h1></div>
-							<% else %>
-								<div class="item social-min block"><h1 class="tweet-feed centered"><%= tweet['text'] %></h1></div>
-						<% end %>
-				   <% end %>
-				   <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-				   <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+						If you use instagram, tag a photo of yourself wearing your Potential Apparel with <%= link_to "#PotentialSays", "http://www.instagram.com/potentialsays", :target => "_blank" %>. We’ll donate a third extra dollar to our partnered charities! Finally, “selfies” that matter! See terms of service for details.
+					</p>
 				</div>
 			</div>
 		</div>

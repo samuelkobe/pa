@@ -29,6 +29,9 @@ Pa::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   config.active_record.auto_explain_threshold_in_seconds = 0.5
 
+  config.time_zone = 'Pacific Time (US & Canada)'
+  config.active_record.default_timezone = 'Pacific Time (US & Canada)'
+
   # Do not compress assets
   config.assets.compress = false
 
