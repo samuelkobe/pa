@@ -889,6 +889,38 @@ background: url("/assets/subtle-grid.gif");
 	}
 }
 
+.instore {
+	position: relative;
+}
+
+.instore-image {
+	@include border-radius (80px 80px 0 80px);
+}
+
+.retail-image {
+	width: 60%;
+	position: absolute;
+	right: -100px;
+	top: -40px;
+}
+.retail {
+	font-size: 1.6em;
+	line-height: 1.4em;
+	height: auto;
+	padding: 25px;
+	background: black;
+	@include border-radius (0px 180px 180px 180px);
+	text-align: center;
+	color: #fff;
+}
+
+.store-location {
+	margin-top: 25px;
+	b {
+		padding-bottom: 10px;
+	}
+}
+
 //contact 
 #contact{
 	position: relative;
