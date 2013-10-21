@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300italic,200italic);
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	min-width: 960px;
+}
+
+body {
+	font-family: "Titillium Web";
+	background: url('splash/splashbg.png') top;
+	width: 100%;
+}
+
+#splashContainer {
+	width: 100%;
+	margin-top: 440px;
+	text-align: center;
+		h1, p {
+			margin: 0 auto;
+			width: 100%;
+			text-align: left;
+		}
+		p {
+			font-style: italic;
+			font-weight: 300;
+		}
+}
+
+.innerContentWrap {
+	background: url('splash/splashzamboni.png') no-repeat right center;
+	margin: 0 auto;
+	width: 50%;
+	min-width: 600px;
+	padding: 60px 0px 40px 0px;
+}
+
+.break {
+	width: 50%;
+	margin: 0 auto;
+	border-top: 2px solid #111;
+	opacity: .1;
+}
+
+.breakWrap {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.breakSmall {
+	float: left;
+	width: 37.5%;
+	margin: 40px auto;
+	border-top: 2px solid #111;
+	opacity: .1;
+	&:first-child {
+		margin-right: 5%;
+	}
+}
+
+.breakContent {
+	float: left;
+	width: 15%;
+	margin: 50px auto;
+	margin-right: 5%;
+}
+
+.message {
+	min-width: 95px;
+	margin-top: -22px;
+}
+
+.social {
+	width: 50%;
+	margin: 0 auto;
+	clear: both;
+}
+
+.socialNetwork {
+	float: left;
+	width: 33.3333333333%;
+	height: 100px;
+}

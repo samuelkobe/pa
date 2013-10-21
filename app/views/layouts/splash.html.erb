@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Potential Apparel Inc.</title>
+  <%= stylesheet_link_tag "splash" %>
+
+  <%= favicon_link_tag 'favicon.ico' %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  
+<div id='splashContainer'>
+	
+	<section class='break'>
+	</section>
+	
+	<%= yield %>
+	
+	<div class="breakWrap">
+		<section class='breakSmall'></section>
+		<section class='breakContent'><div class="message">stay updated<div></section>
+		<section class='breakSmall'></section>
+	</div>
+	
+	<div class="social">
+		<section class='socialNetwork'><%= link_to image_tag('splash/facebook.png'), 'http://facebook.com/potentialapparel' %></section>
+		<section class='socialNetwork'><%= link_to image_tag('splash/twitter.png'), 'http://twitter.com/potentialSays' %></section>
+		<section class='socialNetwork'><%= link_to image_tag('splash/instagram.png'), 'http://instagram.com/potentialSays' %></section>
+	</div>
+	
+</div>
+
+</body>
+</html>
