@@ -1,0 +1,1203 @@
+html, body{
+	height: 100%;
+}
+
+.pixel-push{
+	padding-bottom: 1px;
+}
+// Grays
+// -------------------------
+$black:                 #000 !default;
+$grayDarker:            #222 !default;
+$grayDark:              #333 !default;
+$gray:                  #555 !default;
+$grayLight:             #999 !default;
+$grayLighter:           #eee !default;
+$white:                 #fff !default;
+
+
+// Accent colors
+// -------------------------
+$blue:                  #049cdb !default;
+$blueDark:              #0064cd !default;
+$green:                 #46a546 !default;
+$red:                   #9d261d !default;
+$yellow:                #ffc40d !default;
+$orange:                #f89406 !default;
+$pink:                  #c3325f !default;
+$purple:                #7a43b6 !default;
+
+
+// Scaffolding
+// -------------------------
+$bodyBackground:        $white !default;
+$textColor:             $grayDark !default;
+
+
+// Links
+// -------------------------
+$linkColor:             #08c !default;
+$linkColorHover:        darken($linkColor, 15%) !default;
+
+
+// Typography
+// -------------------------
+$sansFontFamily:        'Open Sans', sans-serif !default;
+$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
+
+$baseFontSize:          14px !default;
+$baseFontFamily:        $sansFontFamily !default;
+$baseLineHeight:        22px !default;
+$altFontFamily:         $serifFontFamily !default;
+
+$headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:    bold !default;    // instead of browser default, bold
+$headingsColor:         inherit !default; // empty to use BS default, $textColor
+
+
+// Component sizing
+// -------------------------
+// Based on 14px font-size and 20px line-height
+
+$fontSizeLarge:         $baseFontSize * 1.25; // ~18px
+$fontSizeSmall:         $baseFontSize * 0.85; // ~12px
+$fontSizeMini:          $baseFontSize * 0.75; // ~11px
+
+$paddingLarge:          11px 19px !default; // 44px
+$paddingSmall:          2px 10px !default;  // 26px
+$paddingMini:           0px 6px !default;   // 22px
+
+$baseBorderRadius:      4px !default;
+$borderRadiusLarge:     6px !default;
+$borderRadiusSmall:     3px !default;
+
+
+// Tables
+// -------------------------
+$tableBackground:                   transparent !default; // overall background-color
+$tableBackgroundAccent:             #f9f9f9 !default; // for striping
+$tableBackgroundHover:              #f5f5f5 !default; // for hover
+$tableBorder:                       #ddd !default; // table and cell border
+
+// Buttons
+// -------------------------
+$btnBackground:                     $white !default;
+$btnBackgroundHighlight:            darken($white, 10%) !default;
+$btnBorder:                         #ccc !default;
+
+$btnPrimaryBackground:              $linkColor !default;
+$btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
+
+$btnInfoBackground:                 #5bc0de !default;
+$btnInfoBackgroundHighlight:        #2f96b4 !default;
+
+$btnSuccessBackground:              #62c462 !default;
+$btnSuccessBackgroundHighlight:     #51a351 !default;
+
+$btnWarningBackground:              lighten($orange, 15%) !default;
+$btnWarningBackgroundHighlight:     $orange !default;
+
+$btnDangerBackground:               #ee5f5b !default;
+$btnDangerBackgroundHighlight:      #bd362f !default;
+
+$btnInverseBackground:              #444 !default;
+$btnInverseBackgroundHighlight:     $grayDarker !default;
+
+
+// Forms
+// -------------------------
+$inputBackground:               $white !default;
+$inputBorder:                   #ccc !default;
+$inputBorderRadius:             $baseBorderRadius !default;
+$inputDisabledBackground:       $grayLighter !default;
+$formActionsBackground:         #f5f5f5 !default;
+$inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+
+
+// Dropdowns
+// -------------------------
+$dropdownBackground:            $white !default;
+$dropdownBorder:                rgba(0,0,0,.75) !default;
+$dropdownDividerTop:            #e5e5e5 !default;
+$dropdownDividerBottom:         $white !default;
+
+$dropdownLinkColor:             $grayDark !default;
+$dropdownLinkColorHover:        $white !default;
+$dropdownLinkColorActive:       $white !default;
+
+$dropdownLinkBackgroundActive:  $linkColor !default;
+$dropdownLinkBackgroundHover:   $dropdownLinkBackgroundActive !default;
+
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+$zindexDropdown:          1000 !default;
+$zindexPopover:           1010 !default;
+$zindexTooltip:           1030 !default;
+$zindexFixedNavbar:       1030 !default;
+$zindexModalBackdrop:     1040 !default;
+$zindexModal:             1050 !default;
+
+
+// Sprite icons path
+// -------------------------
+$iconSpritePath:          image-path("glyphicons-halflings.png") !default;
+$iconWhiteSpritePath:     image-path("glyphicons-halflings-white.png") !default;
+
+
+// Input placeholder text color
+// -------------------------
+$placeholderText:         $grayLight !default;
+
+
+// Hr border color
+// -------------------------
+$hrBorder:                $grayLighter !default;
+
+
+// Horizontal forms & lists
+// -------------------------
+$horizontalComponentOffset:       180px !default;
+
+
+// Wells
+// -------------------------
+$wellBackground:                  #f5f5f5 !default;
+
+
+// Navbar
+// -------------------------
+$navbarCollapseWidth:             979px !default;
+$navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
+
+$navbarHeight:                    40px !default;
+$navbarBackgroundHighlight:       $black !default;
+$navbarBackground:                darken($navbarBackgroundHighlight, 5%) !default;
+$navbarBorder:                    darken($navbarBackground, 12%) !default;
+
+$navbarText:                      $white !default;
+$navbarLinkColor:                 $white !default;
+$navbarLinkColorHover:            darken($white, 10%) !default;
+$navbarLinkColorActive:           darken($white, 5%) !default;
+$navbarLinkBackgroundHover:       transparent !default;
+$navbarLinkBackgroundActive:      darken($navbarBackground, 5%) !default;
+
+$navbarBrandColor:                $navbarLinkColor !default;
+
+// Inverted navbar
+$navbarInverseBackground:                #111111 !default;
+$navbarInverseBackgroundHighlight:       #222222 !default;
+$navbarInverseBorder:                    #252525 !default;
+
+$navbarInverseText:                      $grayLight !default;
+$navbarInverseLinkColor:                 $grayLight !default;
+$navbarInverseLinkColorHover:            $white !default;
+$navbarInverseLinkColorActive:           $navbarInverseLinkColorHover !default;
+$navbarInverseLinkBackgroundHover:       transparent !default;
+$navbarInverseLinkBackgroundActive:      $navbarInverseBackground !default;
+
+$navbarInverseSearchBackground:          lighten($navbarInverseBackground, 25%) !default;
+$navbarInverseSearchBackgroundFocus:     $white !default;
+$navbarInverseSearchBorder:              $navbarInverseBackground !default;
+$navbarInverseSearchPlaceholderColor:    #ccc !default;
+
+$navbarInverseBrandColor:                $navbarInverseLinkColor !default;
+
+
+// Pagination
+// -------------------------
+$paginationBackground:                #fff !default;
+$paginationBorder:                    #ddd !default;
+$paginationActiveBackground:          #f5f5f5 !default;
+
+
+// Hero unit
+// -------------------------
+$heroUnitBackground:              $grayLighter !default;
+$heroUnitHeadingColor:            inherit !default;
+$heroUnitLeadColor:               inherit !default;
+
+
+// Form states and alerts
+// -------------------------
+$warningText:             #c09853 !default;
+$warningBackground:       #fcf8e3 !default;
+$warningBorder:           darken(adjust-hue($warningBackground, -10), 3%) !default;
+
+$errorText:               #b94a48 !default;
+$errorBackground:         #f2dede !default;
+$errorBorder:             darken(adjust-hue($errorBackground, -10), 3%) !default;
+
+$successText:             #468847 !default;
+$successBackground:       #dff0d8 !default;
+$successBorder:           darken(adjust-hue($successBackground, -10), 5%) !default;
+
+$infoText:                #3a87ad !default;
+$infoBackground:          #d9edf7 !default;
+$infoBorder:              darken(adjust-hue($infoBackground, -10), 7%) !default;
+
+
+// Tooltips and popovers
+// -------------------------
+$tooltipColor:            #fff !default;
+$tooltipBackground:       #000 !default;
+$tooltipArrowWidth:       5px !default;
+$tooltipArrowColor:       $tooltipBackground !default;
+
+$popoverBackground:       #fff !default;
+$popoverArrowWidth:       10px !default;
+$popoverArrowColor:       #fff !default;
+$popoverTitleBackground:  darken($popoverBackground, 3%) !default;
+
+// Special enhancement for popovers
+$popoverArrowOuterWidth:  $popoverArrowWidth + 1 !default;
+$popoverArrowOuterColor:  rgba(0,0,0,.25) !default;
+
+
+
+// GRID
+// --------------------------------------------------
+
+
+// Default 940px grid
+// -------------------------
+$gridColumns:             12 !default;
+$gridColumnWidth:         60px !default;
+$gridGutterWidth:         20px !default;
+$gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1)) !default;
+
+// 1200px min
+$gridColumnWidth1200:     70px !default;
+$gridGutterWidth1200:     30px !default;
+$gridRowWidth1200:        ($gridColumns * $gridColumnWidth1200) + ($gridGutterWidth1200 * ($gridColumns - 1)) !default;
+
+// 768px-979px
+$gridColumnWidth768:      42px !default;
+$gridGutterWidth768:      20px !default;
+$gridRowWidth768:         ($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1)) !default;
+
+
+// Fluid grid
+// -------------------------
+$fluidGridColumnWidth:    percentage($gridColumnWidth/$gridRowWidth) !default;
+$fluidGridGutterWidth:    percentage($gridGutterWidth/$gridRowWidth) !default;
+
+// 1200px min
+$fluidGridColumnWidth1200:     percentage($gridColumnWidth1200/$gridRowWidth1200) !default;
+$fluidGridGutterWidth1200:     percentage($gridGutterWidth1200/$gridRowWidth1200) !default;
+
+// 768px-979px
+$fluidGridColumnWidth768:      percentage($gridColumnWidth768/$gridRowWidth768) !default;
+$fluidGridGutterWidth768:      percentage($gridGutterWidth768/$gridRowWidth768) !default;
+$sansFontFamily: 'Open Sans', sans-serif !default;
+@import "bootstrap";
+
+//splash page
+.logo {
+	position: relative;
+	height: auto;
+	display: inline-block;
+	float: left;
+}
+.no-padding{
+	padding-top: 0 !important;
+}
+.bump {
+	left: 75px !important;
+	top: 10px;
+}
+
+.potential-logo {
+	position: absolute;
+}
+
+
+//misc
+.one-third {
+	height: 30%;
+	//background: pink;
+}
+
+.tall{
+	position: relative;
+	height: 100%;
+}
+
+.two-thirds{
+	height: 69%;
+	//background: orange;
+}
+
+.two-fifths{
+	height: 50%;
+}
+
+.three-fifths{
+	height: 50%;
+	//background: orange;
+}
+
+.frame{
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+	padding: 75px 0 0;
+}
+
+//hero
+.hero-img{
+	position: absolute;
+	bottom: 10px;
+	right: 2.5em;
+}
+.w-potential-logo{
+	position:relative;
+	width: 60px;
+}
+.potential-logo{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: #000;
+}
+.call-to-action-info{
+	postion: relative;
+}
+.w-call-to-action{
+	position: absolute;
+	top: 50%;
+	margin-top: -183px;
+}
+.call-to-action{
+	padding-bottom: 2.5em;
+	p{
+		margin-top: 16px;
+	}
+}
+
+
+
+//concept
+#concept{
+background: url("/assets/subtle-grid.gif");
+}
+.steps{
+	height: 100%;
+	padding-top: 0;
+}
+.video-wrapper{
+	padding-top:5%;
+}
+.video-block{
+	position: relative;
+	z-index:0 !important; 
+	margin-top: 72px; 
+	width: 100%;
+	height: 653px;
+	//48.9285714286em
+}
+
+.step-well{
+	position: relative;
+	display: inline-block;
+	margin-top: 36px;
+	left: 50%;
+	margin-left: -2.5em;
+	height: 80px;
+	width: 80px;
+	@include border-radius (2.5em);
+}
+
+.message{
+	padding: .75em;
+	text-align: center;
+}
+
+#roster{
+	background: url(https://s3.amazonaws.com/online-static-potential-bucket/images/stadium-lores.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	.bottom-line{
+		position: relative;
+		color: #fff;
+		text-align:left;
+	}
+	.light-line{
+		color: #fff;
+		background: #fff;
+		height: 1px;
+		margin-left: 52px;
+	}
+}
+
+.title-roster{
+	position: absolute;
+	top:-54px;
+	color: #fff;
+}
+//roster well
+
+#this-carousel-id-2{
+	height: 100%;
+}
+
+.carousel-inner{
+	height: 100%;
+}
+
+.item{
+	height: 100%;
+	min-height: 472px;
+	padding-top: 28px;
+}
+
+.roster-well{
+	margin-top: 2.75%;
+}
+
+.pad-top{
+	margin-top: 10%;
+}
+
+.player-info-left{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	margin-left: 0 !important;
+	background: $dropdownBorder;
+	overflow: hidden;
+	.current-team{
+		font-size:8px;
+		color: #fff;
+		margin-bottom:0;
+	}
+}
+
+.player-info-right{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin-right: 0 !important;
+	background: $dropdownBorder;
+	overflow: hidden;
+	.current-team{
+		font-size:8px;
+		color: #fff;
+		margin-bottom:0;
+	}
+
+}
+.team-name{
+	color: #fff;
+	padding: 0;
+	font-size: 16px;
+	p{
+    font-size: 12px;
+    margin: 0;
+    font-weight: 400;
+
+	}
+}
+
+.city{
+	color: #fff;
+	display: block;
+	font-weight: 400;
+	line-height: .8em;
+}
+.player-padding{
+	padding: 12px;
+}
+.player-name{
+	color:#fff;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0px #000;
+	font-size: 22.5px;
+	.first-name{
+		font-weight:400;
+		display:block
+	}
+	.last-name{
+		font-weight:700;
+	}
+	
+}
+.team-logo{
+	background:url(https://s3.amazonaws.com/online-static-potential-bucket/images/team-sprite-v2.png) 0 0;
+	height: 50px;
+	width: 50px;
+	margin-top: -10px;
+}
+
+.emptyroster {
+	height: 214px;
+}
+.montreal{
+	background-position:0 0;
+}
+.columbus {
+	background-position:-50px 0;
+}
+.detroit{
+	background-position:-100px 0;
+}
+.buffalo{
+	background-position:-150px 0;
+}
+.edmonton{
+	background-position:-200px 0;
+}
+//edit these
+.boston{
+	background-position:-250px 0;
+}
+.dallas{
+	background-position:-300px 0;
+}
+.nashville{
+	background-position:-350px 0;
+}
+.nhl{
+	background-position:-400px 0;
+}
+.newyork{
+	background-position:-450px 0;
+}
+.stlouis{
+	background-position:-500px 0;
+}
+.winnipeg{
+	background-position:-550px 0;
+}
+.idaho{
+	background-position:-600px 0;
+}
+.hitmen{
+	background-position:-650px 0;
+}
+.mississippi{
+	background-position:-700px 0;
+}
+.everett{
+	background-position:-750px 0;
+}
+.minnesota{
+	background-position:-800px 0;
+}
+.stu{
+	background-position:-850px 0;
+}
+.medicinehat{
+	background-position:-900px 0;
+}
+.hungary{
+	background-position:-950px 0;
+}
+.ubc{
+	background-position:-1000px 0;
+}
+.hamburg{
+	background-position:-1050px 0;
+}
+.uofa{
+	background-position:-1100px 0;
+}
+.anaheim{
+	background-position:-1150px 0;
+}
+
+.twitter-handle{
+		padding-bottom: 20px;
+		a{
+			text-shadow: 1px 1px 0px #000;
+			&:hover{
+				color: #fff;
+			} 
+		}
+	}
+
+
+//partners
+.partners-info{
+	background: $dropdownBorder;
+	padding: 20px;
+	color: #fff;
+}
+#partners{
+	background: url(https://s3.amazonaws.com/online-static-potential-bucket/images/rtpimg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#partners-2{
+	background: url(https://s3.amazonaws.com/online-static-potential-bucket/images/hh-img3.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.partner-subheader{
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 19px;
+	color: #00A7FF;
+	margin-top: -12px;
+}
+
+.partner-flavor{
+	font-size: 18px;
+	font-style: italic;
+	padding-top: 3.25em;
+	padding-bottom: .75em;
+}
+
+.button-wrapper{
+	width: 100%;
+}
+
+
+//apparel
+.relative{
+	position: relative;
+	height: 72px;
+}
+.absolute-20{
+	position: absolute;
+	top:72px;
+	color: #000;
+	text-shadow: 1px 1px 0 #f5f5f5;
+}
+.bottom-line{
+	position: absolute;
+}
+.darker-line{
+	color: #000;
+	background: #000;
+	height: 1px;
+}
+.bump-20{
+	margin-top: 32px;
+}
+.bump-40{
+	margin-top: 64px;
+}
+.app-wrap{
+	position: relative;
+	&:active{
+		position: absolute;
+		margin-top: 1px;
+	}
+}
+.app-anchor{
+	position: relative;
+	border: 1px #fff solid;
+	&:hover{
+		border-bottom: 1px #000 solid;
+	}
+}
+
+//navigation
+
+
+//import
+@import "bootstrap-responsive";
+//import end
+
+.social-nav-icon-links {
+	width: 24px;
+	padding: 3px;
+}
+
+.btn{
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background: $black;
+	padding: 15px 50px;
+	margin: 72px 0;
+}
+
+.btn-large{
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.alpha{
+	margin-left: 0 !important;
+}
+
+.omega{
+	margin-right: 0 !important;
+}
+
+
+.nav a.active {
+	color: red;
+}
+
+.gear-up {
+	background: #fff;
+	width: 100%;
+	margin-top: 50px;
+}
+
+//footer
+
+.footer-splash{
+	position: relative;
+	background:#333;
+	min-height:500px;
+	width:100%;
+}
+
+.social-footer-images {
+	width: 48px;
+	padding: 6px;
+}
+
+.hockeynowlogo {
+	width: 40%;
+	height: auto;
+	margin-bottom: 80px;
+}
+
+.w-footer-info{
+	color: #fff;
+	margin-top: 72px;
+	p{
+		font-size: 21px;
+		line-height: 28px;
+	}
+	.break-bar{
+		color: #f5f5f5;
+		height: 1px;
+		border: none;
+		background-color: #fff;
+	}
+}
+
+.terms-wrap{
+	position: absolute;
+	bottom: 0;
+	background: #000;
+	height: 50px;
+	width: 100%;
+	p{
+		line-height: 50px;
+		color: #fff;
+		font-size: 12px;
+	}
+	.faq{
+		text-align: right;
+		margin-right: 30px;
+		background-color: #000;
+	}
+}
+
+
+//social page
+
+.social-steps-info-wrapper{
+	text-align: center;
+	p{
+		text-align: left;
+	}
+}
+
+.social-call-to-action{
+	padding-top: 42px;
+}
+.social-icon{
+	width:50%;
+	height: 185px;
+	margin: 0 auto 36px;
+}
+.social-min{
+	min-height: 400px;
+}
+.tweet-feed{
+	text-align: center;
+	padding: 0 100px;
+
+}
+
+//controls
+.carousel-control.left{
+	left: -72px;
+	top: 50%;
+	padding-right: 3px;
+	padding-bottom: 2px;
+}
+.carousel-control.right{
+	right: -72px;
+	top: 50%;
+	padding-left: 3px;
+	padding-bottom: 2px;
+}
+
+//potential team
+.w-team-info{
+	position:relative;
+	height: 262px;
+
+	.team-info{
+		position: absolute;
+		top:-257px;
+		left:-157px;
+		width: 314px;
+		height: 314px;
+		padding: 55px;
+		background: black;
+		@include border-radius (280px);
+		text-align: center;
+		color: #fff;
+		p{
+			padding-top: 37px;
+			font-size: 13px;
+		}
+	}
+}
+
+.instore {
+	position: relative;
+}
+
+.instore-image {
+	@include border-radius (80px 80px 0 80px);
+}
+
+.retail-image {
+	width: 60%;
+	position: absolute;
+	right: -100px;
+	top: -40px;
+}
+.retail {
+	font-size: 1.6em;
+	line-height: 1.4em;
+	height: auto;
+	padding: 25px;
+	background: black;
+	@include border-radius (0px 180px 180px 180px);
+	text-align: center;
+	color: #fff;
+}
+
+.store-location {
+	margin-top: 25px;
+	b {
+		padding-bottom: 10px;
+	}
+}
+
+//contact 
+#contact{
+	position: relative;
+	@include background-size(cover);
+
+	h3, p{
+		color: #fff;
+	}
+	
+}
+.contact{
+
+	position:fixed;
+	background-color: rgba(0,0,0,.3);
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.w-contact{
+	position:relative;
+}
+.padding-bottom{
+	padding-bottom: 75px;
+}
+.no-margin-top{
+	margin-top: 0;
+}
+
+@media (min-width: 980px) and (max-width: 1400px){
+	.frame{ height: auto; min-height: auto;}
+  
+.pad-top{
+	display:none;
+	visibility:hidden;
+}
+.roster-well {
+	margin-top: 1%;
+}
+.move-down{
+	margin-top: -40px;
+	padding: 0;
+}
+.hero-img{
+	right: 0.5em;
+}
+.height-100{
+	position: relative;
+	margin-top: -24px;
+}
+	.carousel-control.left{
+		left: -22px;
+		top: 50%;
+		z-index: 100;
+	}
+	.carousel-control.right{
+		right: -22px;
+		top: 50%;
+		z-index: 100;
+	}
+	.w-team-info{
+		.team-info{
+			left: 0;
+		}
+	}
+	.potential-team-names{
+		float: right;
+		width: 400px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .height-66{ height:100% }
+  .frame{ height: auto; min-height: auto;}
+  .hero-img {position: relative;} 
+  .message {padding: 0}
+  .roster-well{
+	margin-top: 1.75%;
+	}
+	.pad-top{
+	display:none;
+	visibility:hidden;
+	}
+	.carousel-control.left{
+		left: 0px;
+		top: 50%;
+	}
+	.carousel-control.right{
+		right: 0px;
+		top: 50%;
+	}
+	.w-team-info{
+		.team-info{
+			left: 0;
+		}
+	}
+	.w-billboard{
+		position: relative;
+	}
+	.billboard{
+		position: absolute;
+		bottom: 0;
+	}
+	.player-name{
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.twitter-handle{
+		padding-bottom: 0;
+
+		font-size: 10px;
+	}
+	.team-name{
+		font-size: 12px;
+	}
+	.team-logo{
+		display: none;
+		visibility: hidden;
+	}
+	.long-name{
+		font-size: 12px;
+	}
+
+}
+
+// Phones only
+@media (max-width: 767px) {
+   .height-66 { height:100% }
+   .tall{height:auto} 
+   .frame{ height: auto; min-height: auto; padding:0; margin:0;}
+   .hero-img {position: relative; padding-left: 30px;}
+   .message {padding: 0}
+   #roster {background: #000;}
+   .player-info-left{
+   	width: 33%;
+   }
+   .player-info-right{
+   	width: 33%;
+   }
+   	.pad-top{
+	display:none;
+	visibility:hidden;
+	}
+	.video-block{
+		width: 100%;
+		height: 200px;
+	}
+	.carousel-control.left{
+		left: 0px;
+		top: 50%;
+	}
+	.carousel-control.right{
+		right: 0px;
+		top: 50%;
+	}
+	.w-team-info{
+		.team-info{
+			left: 0;
+		}
+	}
+	#partners-2{
+		margin: 32px 0;
+	}
+	.w-call-to-action{
+	position: relative;
+	top: 0;
+	margin-top: 0;
+		.call-to-action h2 {
+			text-align: center;
+		}
+	}
+	.bottom-line{
+		position: relative;
+		color: #fff;
+		text-align: center;
+	}
+	.item {
+		min-height: 100px;
+	}
+	.block-mobile {
+		text-align: center;
+	}
+	#partners{
+		background: #000;
+	}
+
+	#partners-2{
+		background: #000;
+	}
+	#contact {
+		padding-bottom: 80px;
+		.container {
+			padding: 0 20px;
+		}
+	}
+	.terms-wrap {
+		text-align: center;
+		.faq {
+			text-align: center;
+		}
+	}
+}
+.active > a{
+	color: $blue !important;
+}
+.block {
+   display: table;
+   width: 100%;
+   text-align: center;
+
+}
+
+.margin-36{
+	margin-top: 36px;
+}
+.centered {
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+   height: 275px;
+   min-width: 960px;
+}
+.centered-1 {
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+   height: 1px;
+   min-width: 960px;
+}
+.no-margin{
+	margin: 0;
+}
+.no-margin-b{
+	margin-bottom: 0;
+}
+.dropdown-menu > .active > a {
+	color:#fff !important;
+}
+.brand{ color: inherit;}
+
+.padding-push-top{
+	margin-top: 55px;
+}
+
+.blocker{
+	position: fixed;
+
+	top:0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background: rgba(0,0,0,.85);
+
+	&:after{
+		position: absolute;
+		content: " ";
+		background: url(pa-launches-soon.png) no-repeat center center;
+		height: 100%;
+		width: 100%;
+		background-size: auto 100%;
+
+	}
+}
+
+.apparel-bottom-style {
+	padding-bottom: 36px;
+}
+.header-social-title{
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+}
+.header-social-h6{
+	margin: 0px 0 10px;
+}
+
+
+
+//MOBILE EDITS
+
+h4 {
+	padding-left: 15px;
+	a.mobile-header-link {
+		color: #fff;
+		font-weight: 400;
+		font-family: "Open Sans", "sans-serif";
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
