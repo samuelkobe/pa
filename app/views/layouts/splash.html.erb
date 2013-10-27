@@ -14,21 +14,30 @@
   
 <div id='splashContainer'>
 	
-	<section class='break'>
-	</section>
+	<div class="breakWrap">
+		<section class='breakSmall'></section>
+		<section class='breakContentBig'><div class="message">Helping youth reach their potential<div></section>
+		<section class='breakSmall'></section>
+	</div>
 	
 	<%= yield %>
 	
 	<div class="breakWrap">
-		<section class='breakSmall'></section>
+		<section class='breakMedium'></section>
 		<section class='breakContent'><div class="message">stay updated<div></section>
-		<section class='breakSmall'></section>
+		<section class='breakMedium'></section>
 	</div>
 	
 	<div class="social">
-		<section class='socialNetwork'><%= link_to image_tag('splash/facebook.png'), 'http://facebook.com/potentialapparel' %></section>
-		<section class='socialNetwork'><%= link_to image_tag('splash/twitter.png'), 'http://twitter.com/potentialSays' %></section>
-		<section class='socialNetwork'><%= link_to image_tag('splash/instagram.png'), 'http://instagram.com/potentialSays' %></section>
+		<section class='socialNetwork'><%= link_to image_tag('splash/facebook.png'), 'http://facebook.com/potentialapparel', :target => "_blank" %></section>
+		<section class='socialNetwork'><%= link_to image_tag('splash/twitter.png'), 'http://twitter.com/potentialSays', :target => "_blank" %></section>
+		<section class='socialNetwork'><%= link_to image_tag('splash/instagram.png'), 'http://instagram.com/potentialSays', :target => "_blank" %></section>
+	</div>
+	
+	<div class="breakWrap">
+		<section class='breakSmallNoBorder'></section>
+		<section class='breakContentBig'><div class="message"><a href="mailto:info@potentialapparel.com?subject=Hey%20Potential%20Apparel!">info@potentialapparel.com</a><div></section>
+		<section class='breakSmallNoBorder'></section>
 	</div>
 	
 </div>
