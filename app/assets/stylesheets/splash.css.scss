@@ -19,14 +19,17 @@ body {
 	width: 100%;
 	margin-top: 440px;
 	text-align: center;
-		h1, p {
-			margin: 0 auto;
-			width: 100%;
-			text-align: left;
-		}
-		p {
-			font-style: italic;
-			font-weight: 300;
+	h1 {
+		font-size: 30px;
+	}
+	h1, p {
+		margin: 0 auto;
+		width: 100%;
+		text-align: left;
+	}
+	p {
+		font-style: italic;
+		font-weight: 300;
 		}
 }
 
